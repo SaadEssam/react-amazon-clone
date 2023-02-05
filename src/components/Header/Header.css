@@ -1,0 +1,44 @@
+.header-top {
+  background-color: var(--color-dark-blue);
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.header-main {
+  background-color: var(--color-dark-blue);
+}
+
+.input-group-text {
+  background-color: var(--color-orange);
+}
+
+.header-links svg {
+  font-size: 30px;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.header-bottom {
+  background-color: var(--color-midnight);
+}
+
+.menu-links a,
+.dropdown button {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+}
+
+.dropdown button:focus {
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  background-color: var(--color-dark-blue);
+  width: 100%;
+  transform: translate3d(0px, 57px, 0px) !important;
+}

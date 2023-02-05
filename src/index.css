@@ -2,6 +2,12 @@
 
 :root {
   --font-base: 'Rubik', sans-serif;
+  --color-dark-blue: #131921;
+  --color-midnight: #232f3e;
+  --color-gray: #3b4149;
+  --color-white: #fff;
+  --color-orange: #febd69;
+
 }
 
 
@@ -10,7 +16,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  background-color: antiquewhite;
+  /* background-color: white; */
 }
 
 a {
