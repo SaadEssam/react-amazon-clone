@@ -7,8 +7,9 @@
   background-color: var(--color-dark-blue);
 }
 
-.input-group-text {
+.search-icon {
   background-color: var(--color-orange);
+  cursor: pointer;
 }
 
 .header-links svg {

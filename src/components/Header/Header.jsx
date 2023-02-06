@@ -42,8 +42,8 @@ const Header = () => {
                   placeholder="Search product here..."
                   aria-label="Search product here..."
                 />
-                <span className="input-group-text p-3">
-                  <BsSearch className="fs-6" />
+                <span className="input-group-text search-icon p-3">
+                  <BsSearch fontSize={20} />
                 </span>
               </div>
             </div>

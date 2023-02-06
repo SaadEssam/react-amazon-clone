@@ -1,0 +1,13 @@
+footer {
+  background-color: var(--color-midnight);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid var(--color-gray);
+}
+
+.sub-btn {
+  background-color: var(--color-midnight);
+  color: var(--color-white);
+  padding: 8px 17px;
+}
