@@ -40,5 +40,16 @@
 .dropdown-menu {
   background-color: var(--color-dark-blue);
   width: 100%;
-  transform: translate3d(0px, 57px, 0px) !important;
+  transform: translate3d(0px, 46px, 0px) !important;
+}
+
+.dropdown-item {
+  padding: 9px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid var(--color-midnight);
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: var(--color-orange) !important;
 }

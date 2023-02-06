@@ -91,7 +91,7 @@ const Header = () => {
                   <div className="dropdown">
                     <button
                       className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
-                      type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                      type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     ><CgMenuGridO fontSize={20} />
                     <span className="me-5 d-inline-block">Shop Categories</span>
                     </button>
