@@ -14,3 +14,10 @@
 .gap-30 {
   gap: 30px;
 }
+
+.buy-btn {
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: var(--color-midnight);
+  font-weight: 600px;
+}
