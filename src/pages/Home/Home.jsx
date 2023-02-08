@@ -10,6 +10,7 @@ import {
   MdCreditCard,
 } from 'react-icons/md';
 import Brand from '../../sections/Brand/Brand';
+import Blog from '../../sections/Blog/Blog';
 
 const Home = () => {
   return (
@@ -180,6 +181,7 @@ const Home = () => {
         </div>
       </section>
       <Brand />
+      <Blog />
     </>
   );
 }
