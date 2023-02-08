@@ -1,7 +1,6 @@
 import React from 'react';
 import './Blog.css';
 import Article from '../../components/Article/Article';
-import images from '../../constants/images';
 import data from '../../constants/data';
 
 

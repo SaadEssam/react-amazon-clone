@@ -1,5 +1,39 @@
 import images from './images';
 
+const products = [
+  {
+    brand: "Shop Valentine's Day!",
+    title: 'Sep 26, 2021',
+    price: 'Sep 26, 2021',
+    image: images.blog,
+  },
+  {
+    brand: "Shop Valentine's Day!",
+    title: 'Sep 26, 2021',
+    price: 'Sep 26, 2021',
+    image: images.blog,
+  },
+  {
+    brand: "Shop Valentine's Day!",
+    title: 'Sep 26, 2021',
+    price: 'Sep 26, 2021',
+    image: images.blog,
+  },
+  {
+    brand: "Shop Valentine's Day!",
+    title: 'Sep 26, 2021',
+    price: 'Sep 26, 2021',
+    image: images.blog,
+  },
+  {
+    brand: "Shop Valentine's Day!",
+    title: 'Sep 26, 2021',
+    price: 'Sep 26, 2021',
+    image: images.blog,
+  },
+
+];
+
 const blogs = [
   {
     title: "Shop Valentine's Day!",
@@ -23,5 +57,5 @@ const blogs = [
   },
 ];
 
-export default { blogs };
+export default { products, blogs };
 

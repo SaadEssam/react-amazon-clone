@@ -11,6 +11,7 @@ import {
 } from 'react-icons/md';
 import Brand from '../../sections/Brand/Brand';
 import Blog from '../../sections/Blog/Blog';
+import Products from '../../sections/Products/Products';
 
 const Home = () => {
   return (
@@ -182,6 +183,7 @@ const Home = () => {
       </section>
       <Brand />
       <Blog />
+      <Products />
     </>
   );
 }

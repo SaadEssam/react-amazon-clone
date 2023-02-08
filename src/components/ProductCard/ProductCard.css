@@ -1,0 +1,21 @@
+.product-card {
+  padding: 15px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.product-details h6 {
+  color: blue;
+  font-size: 13px;
+}
+
+.product-details h5 {
+  color:brown;
+  font-size: 15px;
+}
+
+.product-details p.price {
+  font-size: 16px;
+  color: brown;
+}
+
