@@ -1,0 +1,5 @@
+.categories, .card-wrapper {
+  background-color: var(--color-white);
+  box-shadow: 0 0 2px var(--color-shadow);
+  padding: 15px;
+}

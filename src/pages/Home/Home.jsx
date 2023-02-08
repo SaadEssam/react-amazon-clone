@@ -9,6 +9,7 @@ import {
   MdOutlineHeadsetMic,
   MdCreditCard,
 } from 'react-icons/md';
+import Brand from '../../sections/Brand/Brand';
 
 const Home = () => {
   return (
@@ -178,6 +179,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Brand />
     </>
   );
 }
