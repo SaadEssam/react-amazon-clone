@@ -4,8 +4,8 @@ import './Article.css';
 
 const Article = ({ image, date, title }) => {
   return (
-    <div className="app_blog-container_article">
-      <div className="app_blog-container_article-image">
+    <div className="app_blog-container_article rounded-3">
+      <div className="app_blog-container_article-image rounded-3">
         <img src={image} alt="blog" />
       </div>
       <div className="app_blog-container_article-content">

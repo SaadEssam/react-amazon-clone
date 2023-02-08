@@ -16,6 +16,11 @@ const blogs = [
     date: 'Sep 26, 2021',
     image: images.blog
   },
+  {
+    title: 'Amazing Technologies from World Cup 2022',
+    date: 'Sep 14, 2021',
+    image: images.blog
+  },
 ];
 
 export default { blogs };

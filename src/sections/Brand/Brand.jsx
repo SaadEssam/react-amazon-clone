@@ -9,7 +9,7 @@ const Brand = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
-            <div className="marque-inner-wrapper card-wrapper">
+            <div className="marque-inner-wrapper card-wrapper rounded-3">
               <Marquee className="d-flex">
                 <div className="mx-4 w-25">
                   <img src={images.brand01} />
