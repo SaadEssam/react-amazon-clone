@@ -182,8 +182,8 @@ const Home = () => {
         </div>
       </section>
       <Brand />
-      <Blog />
       <Products />
+      <Blog />
     </>
   );
 }

@@ -2,35 +2,30 @@ import images from './images';
 
 const products = [
   {
-    brand: "Shop Valentine's Day!",
-    title: 'Sep 26, 2021',
-    price: 'Sep 26, 2021',
-    image: images.blog,
+    brand: "Apple",
+    title: 'Applewatch series 7',
+    price: '$300',
+    image: images.product,
   },
   {
-    brand: "Shop Valentine's Day!",
-    title: 'Sep 26, 2021',
-    price: 'Sep 26, 2021',
-    image: images.blog,
+    brand: "Apple",
+    title: 'Applewatch series 7',
+    price: '$300',
+    image: images.product,
   },
   {
-    brand: "Shop Valentine's Day!",
-    title: 'Sep 26, 2021',
-    price: 'Sep 26, 2021',
-    image: images.blog,
+    brand: "Apple",
+    title: 'Applewatch series 7',
+    price: '$300',
+    image: images.product,
   },
   {
-    brand: "Shop Valentine's Day!",
-    title: 'Sep 26, 2021',
-    price: 'Sep 26, 2021',
-    image: images.blog,
+    brand: "Apple",
+    title: 'Applewatch series 7',
+    price: '$300',
+    image: images.product,
   },
-  {
-    brand: "Shop Valentine's Day!",
-    title: 'Sep 26, 2021',
-    price: 'Sep 26, 2021',
-    image: images.blog,
-  },
+
 
 ];
 

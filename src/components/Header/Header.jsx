@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import images from '../../constants/images';
 import { BsSearch, BsCart3 } from 'react-icons/bs';
-import { MdFavoriteBorder, MdCompare } from 'react-icons/md';
+import { MdFavoriteBorder } from 'react-icons/md';
+import { TbArrowsShuffle } from 'react-icons/tb';
 import { FaRegUser } from 'react-icons/fa';
 import { CgMenuGridO } from 'react-icons/cg';
 import './Header.css';
@@ -51,7 +52,7 @@ const Header = () => {
               <div className="header-links d-flex align-items-center justify-content-between">
                 <div>
                   <Link to="/" className="d-flex align-items-center gap-10 text-white">
-                    <MdCompare />
+                    <TbArrowsShuffle />
                     <p className="mb-0">Compare <br /> Products</p>
                   </Link>
                 </div>

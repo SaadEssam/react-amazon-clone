@@ -10,7 +10,7 @@ const Blog = () => {
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
-            <h3>Our Latest Blogs</h3>
+            <h3 className="mb-3">Our Latest Blogs</h3>
             <div className="app_blog" id="blog">
               <div className="app_blog-container">
                 <div className="app_blog-container_groupB">

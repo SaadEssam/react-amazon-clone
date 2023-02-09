@@ -5,11 +5,11 @@ import './Products.css';
 
 const Products = () => {
   return (
-  <section className="home-wrapper py-5 home-wrapper-2">
+  <div className="blog py-5">
     <div className="container-xxl">
       <div className="row">
         <div className="col-12">
-          <h3 className="section-heading">Featured Collection</h3>
+          <h3 className="mb-3">Featured Collection</h3>
           <div className="app_blog" id="blog">
             <div className="app_blog-container">
               <div className="app_blog-container_groupB">
@@ -28,7 +28,7 @@ const Products = () => {
         </div>
       </div>
     </div>
-  </section>
+  </div>
   );
 }
 
