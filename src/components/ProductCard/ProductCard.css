@@ -46,3 +46,12 @@
   color: var(--color-dark-blue);
   font-size: 20px;
 }
+
+
+svg:hover {
+  padding: 3px 3px;
+  background-color: var(--color-orange);
+  transition: .5s ease;
+  width: 20px;
+  border-radius: 50%;
+}

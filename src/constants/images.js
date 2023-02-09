@@ -21,7 +21,11 @@ import brand06 from '../assets/brand06.png';
 import brand07 from '../assets/brand07.png';
 import brand08 from '../assets/brand08.png';
 import blog from '../assets/blog.jpg';
-import product from '../assets/product.jpg';
+import product01 from '../assets/product01.jpg';
+import product02 from '../assets/product02.jpg';
+import product03 from '../assets/product03.jpg';
+import product04 from '../assets/product04.jpg';
+
 
 
 export default { 
@@ -48,5 +52,8 @@ export default {
   brand07,
   brand08,
   blog,
-  product,
+  product01,
+  product02,
+  product03,
+  product04,
 };
