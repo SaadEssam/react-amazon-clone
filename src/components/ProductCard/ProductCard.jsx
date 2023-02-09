@@ -6,10 +6,10 @@ import { TbArrowsShuffle, TbShoppingCart, TbEye } from 'react-icons/tb';
 import './ProductCard.css';
 
 
-const ProductCard = ({ brand, title, price, image }) => {
+const ProductCard = ({ brand, title, price, image, image02 }) => {
   return (
     <div className="col-3">
-      <div className="product-card position-relative">
+      <Link to="#" className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link to="#">
             <MdFavoriteBorder />
@@ -17,6 +17,7 @@ const ProductCard = ({ brand, title, price, image }) => {
         </div>
         <div className="product-image">
           <img src={image} alt="products" />
+          <img src={image02} alt="products" />
         </div>
         <div className="product-details">
           <h6 className="brand">{brand}</h6>
@@ -43,7 +44,7 @@ const ProductCard = ({ brand, title, price, image }) => {
             </Link>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

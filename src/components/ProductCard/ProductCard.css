@@ -6,6 +6,20 @@
   overflow: hidden;
 }
 
+
+.product-card .product-image img:last-child {
+  display: none;
+}
+
+.product-card:hover .product-image img:nth-child(1) {
+  display: none;
+
+}
+
+.product-card:hover .product-image img:last-child {
+  display: block;
+}
+
 .product-card:hover .action-bar {
   right: 15px;
 }

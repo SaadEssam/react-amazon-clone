@@ -6,24 +6,30 @@ const products = [
     title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
     price: '$600',
     image: images.product01,
+    image02: images.product01a,
   },
   {
     brand: "Hisense",
     title: 'Hisense 58" Class 4K UHD LED LCD Roku Smart TV HDR R6 ',
     price: '$298',
     image: images.product02,
+    image02: images.product02a,
+
+    
   },
   {
     brand: "Samsung",
     title: 'Samsung DW80R2031US 55 dBA Stainless Built-in Dishwasher',
     price: '$758',
     image: images.product03,
+    image02: images.product03a,
   },
   {
     brand: "Beats",
     title: 'Beats Studio Buds – True Wireless Noise Cancelling Bluetooth Earbuds',
     price: '$99.95',
     image: images.product04,
+    image02: images.product04a,
   },
 
 

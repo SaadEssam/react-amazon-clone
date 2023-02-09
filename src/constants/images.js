@@ -25,6 +25,10 @@ import product01 from '../assets/product01.jpg';
 import product02 from '../assets/product02.jpg';
 import product03 from '../assets/product03.jpg';
 import product04 from '../assets/product04.jpg';
+import product01a from '../assets/product01a.jpg';
+import product02a from '../assets/product02a.jpg';
+import product03a from '../assets/product03a.jpg';
+import product04a from '../assets/product04a.jpg';
 
 
 
@@ -56,4 +60,8 @@ export default {
   product02,
   product03,
   product04,
+  product01a,
+  product02a,
+  product03a,
+  product04a,
 };
