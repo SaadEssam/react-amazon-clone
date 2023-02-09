@@ -48,7 +48,7 @@
 }
 
 
-svg:hover {
+.product-card svg:hover {
   padding: 3px 3px;
   background-color: var(--color-orange);
   transition: .5s ease;
