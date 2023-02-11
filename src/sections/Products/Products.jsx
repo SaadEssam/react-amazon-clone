@@ -9,7 +9,7 @@ const Products = () => {
     <div className="container-xxl">
       <div className="row">
         <div className="col-12">
-          <h3 className="mb-3">Featured Collection</h3>
+          <h3 className="section-heading">Featured Collection</h3>
           <div className="app_product" id="product">
             <div className="app_product-container">
               <div className="app_product-container_groupB">

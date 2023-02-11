@@ -6,6 +6,7 @@ import Services from '../../sections/Services/Services';
 import Categories from '../../sections/Categories/Categories';
 import Brand from '../../sections/Brand/Brand';
 import Products from '../../sections/Products/Products';
+import SpecialProducts from '../../sections/SpecialProducts/SpecialProducts';
 import Blog from '../../sections/Blog/Blog';
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Categories />
       <Brand />
       <Products />
+      <SpecialProducts />
       <Blog />
     </>
   );

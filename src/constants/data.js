@@ -30,8 +30,6 @@ const products = [
     image: images.product04,
     image02: images.product04a,
   },
-
-
 ];
 
 const blogs = [
@@ -57,5 +55,5 @@ const blogs = [
   },
 ];
 
-export default { products, blogs };
 
+export default { products, blogs };

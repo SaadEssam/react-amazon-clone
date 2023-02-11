@@ -4,6 +4,7 @@ import subBanner1 from '../assets/subBanner1.jpg';
 import subBanner2 from '../assets/subBanner2.jpg';
 import subBanner3 from '../assets/subBanner3.jpg';
 import subBanner4 from '../assets/subBanner4.jpg';
+
 import camera from '../assets/camera.png';
 import tablets from '../assets/tablets.png';
 import smartwatchs from '../assets/smartwatchs.png';
@@ -12,6 +13,7 @@ import home from '../assets/home.png';
 import music from '../assets/music.png';
 import ps5 from '../assets/ps5.png';
 import tv from '../assets/tv.png';
+
 import brand01 from '../assets/brand01.png';
 import brand02 from '../assets/brand02.png';
 import brand03 from '../assets/brand03.png';
@@ -20,11 +22,14 @@ import brand05 from '../assets/brand05.png';
 import brand06 from '../assets/brand06.png';
 import brand07 from '../assets/brand07.png';
 import brand08 from '../assets/brand08.png';
+
 import blog from '../assets/blog.jpg';
+
 import product01 from '../assets/product01.jpg';
 import product02 from '../assets/product02.jpg';
 import product03 from '../assets/product03.jpg';
 import product04 from '../assets/product04.jpg';
+
 import product01a from '../assets/product01a.jpg';
 import product02a from '../assets/product02a.jpg';
 import product03a from '../assets/product03a.jpg';

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { HiOutlineReceiptPercent } from 'react-icons/hi2';
 import { 
   MdOutlineLocalShipping, 

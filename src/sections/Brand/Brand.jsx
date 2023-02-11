@@ -1,5 +1,5 @@
 import React from 'react';
-import Marquee from "react-fast-marquee";
+import Marquee from 'react-fast-marquee';
 import { images } from '../../constants';
 import './Brand.css';
 
