@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import images from '../../constants/images';
+import { images } from '../../constants';
 import { BsSearch, BsCart3 } from 'react-icons/bs';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { TbArrowsShuffle } from 'react-icons/tb';

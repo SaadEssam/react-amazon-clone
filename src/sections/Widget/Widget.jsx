@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import images from '../../constants/images';
+import { images } from '../../constants';
 import './Widget.css';
 
 const Widget = () => {

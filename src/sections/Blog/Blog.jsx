@@ -1,7 +1,7 @@
 import React from 'react';
 import './Blog.css';
 import Article from '../../components/Article/Article';
-import data from '../../constants/data';
+import { data } from '../../constants';
 
 
 const Blog = () => {

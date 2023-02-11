@@ -1,5 +1,5 @@
 import React from "react";
-import images from '../../constants/images';
+import { images } from '../../constants';
 import './Categories.css';
 
 const Categories = () => {
@@ -14,56 +14,56 @@ const Categories = () => {
                 <h6>Cameras</h6>
                 <p className="mb-0">10 Items</p>
               </div>
-              <img src={images.camera} />
+              <img src={images.camera} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Computers & Laptop</h6>
                 <p className="mb-0">8 Items</p>
               </div>
-              <img src={images.laptops} />
+              <img src={images.laptops} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Mobiles & Tablets</h6>
                 <p className="mb-0">14 Items</p>
               </div>
-              <img src={images.tablets} />
+              <img src={images.tablets} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>smartwatch's</h6>
                 <p className="mb-0">5 Items</p>
               </div>
-              <img src={images.smartwatchs} />
+              <img src={images.smartwatchs} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Headphones</h6>
                 <p className="mb-0">4 Items</p>
               </div>
-              <img src={images.music} />
+              <img src={images.music} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Smart TV</h6>
                 <p className="mb-0">8 Items</p>
               </div>
-              <img src={images.tv} />
+              <img src={images.tv} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Home Appliances</h6>
                 <p className="mb-0">9 Items</p>
               </div>
-              <img src={images.home} />
+              <img src={images.home} alt="category" />
             </div>
             <div className="d-flex align-items-center gap">
               <div>
                 <h6>Gaming Console</h6>
                 <p className="mb-0">5 Items</p>
               </div>
-              <img src={images.ps5} />
+              <img src={images.ps5} alt="category" />
             </div>
           </div>
         </div>
