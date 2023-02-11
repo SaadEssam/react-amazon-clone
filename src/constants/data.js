@@ -14,7 +14,6 @@ const products = [
     price: '$298',
     image: images.product02,
     image02: images.product02a,
-
     
   },
   {

@@ -1,0 +1,11 @@
+.home-wrapper-2 {
+  background-color: var(--color-off-white);
+}
+
+.services * {
+  color: var(--color-gray);
+}
+
+.services svg {
+  font-size: 44px;
+}
