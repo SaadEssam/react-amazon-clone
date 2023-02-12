@@ -5,7 +5,7 @@ import './BannerCards.css';
 
 const BannerCards = () => {
   return (
-    <section className="banner-card py-5 home-wrapper-2">
+    <section className="banner-card py-3 home-wrapper-2">
       <div className="container-xxl">
         <div className="row">
           {data.bannerCard.map((card, index) => (
