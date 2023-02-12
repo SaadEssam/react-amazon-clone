@@ -19,7 +19,7 @@
   line-height: 64px;
   color: var(--color-dark-blue);
   letter-spacing: -3px;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .main-banner-content p {

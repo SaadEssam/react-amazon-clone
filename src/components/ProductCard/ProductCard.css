@@ -28,23 +28,6 @@
   width: 100%
 }
 
-.product-details h6 {
-  color: var(--color-rust);
-  font-size: 13px;
-}
-
-.product-details h5 {
-  color: var(--color-dark-blue);
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.product-details p.price {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--color-dark-blue);
-}
-
 .action-bar {
   top: 10%;
   right: -23px;

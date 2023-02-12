@@ -25,7 +25,7 @@ const Widget = () => {
               <img src={images.subBanner1} className="img-fluid rounded-3" alt="small banner" />
               <div className="small-banner-content position-absolute">
                 <h4>Best Sale</h4>
-                <h5>Macbook pro M2</h5>
+                <h5>Macbook Pro M2</h5>
                 <p>From $1699.00 or $64.99/mo</p>
               </div>
             </div>

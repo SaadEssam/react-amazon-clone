@@ -32,6 +32,63 @@ const products = [
   },
 ];
 
+const SpecialProduct = [
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+  {
+    brand: "Apple",
+    title: 'Apple iMac M1 Desktop Computer 24" M1 8GB RAM 256GB SSD',
+    price: '$600',
+    discountPrice: '$510',
+    image: images.product01,
+    discountDays: '5',
+    productCount: '5'
+  },
+];
+
 const blogs = [
   {
     title: "Shop Valentine's Day!",
@@ -56,4 +113,4 @@ const blogs = [
 ];
 
 
-export default { products, blogs };
+export default { products, SpecialProduct, blogs };
