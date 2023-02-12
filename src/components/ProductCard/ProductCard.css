@@ -3,6 +3,7 @@
   background-color: var(--color-white);
   border-radius: 10px;
   width: 300px;
+  box-shadow: 0 0 4px var(--color-shadow);
   overflow: hidden;
 }
 

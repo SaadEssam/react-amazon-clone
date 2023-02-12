@@ -1,0 +1,40 @@
+.card-content {
+  top: 10%;
+  left: 10%;
+
+}
+
+.card-img img {
+  border-radius: 10px;
+  box-shadow: 0 0 4px var(--color-shadow);
+
+}
+
+.card-content h5 {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-rust);
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.card-content h6 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: var(--color-dark-blue);
+}
+
+
+.card-content h6:nth-child(1) {
+  color: red;
+
+}

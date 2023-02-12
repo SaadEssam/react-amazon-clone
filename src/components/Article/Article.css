@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   background: var(--color-white);
+  box-shadow: 0 0 4px var(--color-shadow);
+
 }
 
 .app_blog-container_article-image {

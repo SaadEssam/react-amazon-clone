@@ -9,7 +9,7 @@ const SpecialProduct = ({ brand, title, price, discountPrice, image, discountDay
       <div className="special-product-card">
         <div className="d-flex justify-content-between">
           <div>
-            <img src={image} className="img-fluid" />
+            <img src={image} className="img-fluid" alt="special product" />
           </div>
           <div className="special-product-content">
             <h5 className="brand">{brand}</h5>

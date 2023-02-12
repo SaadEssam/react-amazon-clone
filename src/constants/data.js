@@ -89,6 +89,33 @@ const SpecialProduct = [
   },
 ];
 
+const bannerCard = [
+  {
+    label: "Big Screen",
+    subtitle: "Smart Watch Series 7",
+    title: "From $399 of $16.62/mo. for 24 mo. *",
+    image: images.famous01,
+  },
+  {
+    label: "Studio Display",
+    subtitle: "600 nits of brightness.",
+    title: "27-inch 5k Retina display",
+    image: images.famous02,
+  },
+  {
+    label: "Smartphones",
+    subtitle: "IPhone 13 Pro",
+    title: "Now in Green, From $999.00 or $41.62/mo. for 24 mo.",
+    image: images.famous03,
+  },
+  {
+    label: "Home Speakers",
+    subtitle: "Room-filling sound",
+    title: "From $699 or $21.99/mo. for 12 mo.",
+    image: images.famous04,
+  },
+]
+
 const blogs = [
   {
     title: "Shop Valentine's Day!",
@@ -113,4 +140,4 @@ const blogs = [
 ];
 
 
-export default { products, SpecialProduct, blogs };
+export default { products, SpecialProduct, bannerCard, blogs };

@@ -2,6 +2,8 @@
   padding: 15px;
   border-radius: 10px;
   background-color: var(--color-white);
+  box-shadow: 0 0 4px var(--color-shadow);
+
 }
 
 .countdown span {
