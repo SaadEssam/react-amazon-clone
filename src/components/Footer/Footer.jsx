@@ -54,10 +54,10 @@ const Footer = () => {
                   XXXXX@amazon.com
                 </a>
                 <div className="social-icons d-flex align-items-center gap-15 mt-4">
-                  <a  className="text-white" href=""><FaFacebookSquare fontSize={20}/></a>
-                  <a  className="text-white" href=""><FaTwitterSquare fontSize={20}/></a>
-                  <a  className="text-white" href=""><FaInstagramSquare fontSize={20}/></a>
-                  <a  className="text-white" href=""><FaYoutubeSquare fontSize={20}/></a>
+                  <a  className="text-white" href="#"><FaFacebookSquare fontSize={20}/></a>
+                  <a  className="text-white" href="#"><FaTwitterSquare fontSize={20}/></a>
+                  <a  className="text-white" href="#"><FaInstagramSquare fontSize={20}/></a>
+                  <a  className="text-white" href="#"><FaYoutubeSquare fontSize={20}/></a>
                 </div>
               </div>
             </div>

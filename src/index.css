@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --font-base: 'Rubik', sans-serif;
@@ -6,7 +6,7 @@
   --color-midnight: #232f3e;
   --color-gray: #3b4149;
   --color-shadow: #9191916b;
-  --color-off-white: #d9d9d8;
+  --color-off-white: #d9d9d865;
   --color-white: #fff;
   --color-orange: #febd69;
   --color-rust: #bf4800;
@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-base);
 
   /* background-color: white; */
 }

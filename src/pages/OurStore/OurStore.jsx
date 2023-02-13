@@ -1,6 +1,7 @@
 import React from "react";
-import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import Meta from "../../components/Meta";
+import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
+import SideBar from "../../sections/SideBar/SideBar";
 import './OurStore.css';
 
 const OurStore = () => {
@@ -8,6 +9,7 @@ const OurStore = () => {
     <>
       <Meta title="Our Store" />
       <BreadCrumb title="Our Store" />
+      <SideBar />
     </>
   );
 }

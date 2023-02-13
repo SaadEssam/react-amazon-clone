@@ -1,4 +1,6 @@
 import React from 'react';
+import Meta from "../../components/Meta";
+
 import './Home.css';
 
 import Widget from '../../sections/Widget/Widget';
@@ -13,6 +15,7 @@ import Blog from '../../sections/Blog/Blog';
 const Home = () => {
   return (
     <>
+      <Meta title="Amazon" />
       <Widget />
       <Services />
       <Categories />

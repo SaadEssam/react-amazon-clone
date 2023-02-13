@@ -1,0 +1,55 @@
+.filter-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 10px 15px 25px;
+  box-shadow: 0 0 4px var(--color-shadow);
+
+}
+
+.filter-title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  margin-bottom: 20px;
+}
+
+.filter-card ul,
+.form-check-label {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--color-gray);
+  cursor: pointer;
+}
+
+.form-check-input {
+  margin-top: 0.40em !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+
+}
+
+.form-check-input:checked {
+  background-color: var(--color-rust);
+  border-color: var(--color-rust);
+}
+
+.form-floating {
+  border-color: var(--color-rust);
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.product-tags span {
+  cursor: pointer;
+}
