@@ -1,0 +1,20 @@
+.filter-sort-grid {
+  padding: 10px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 4px var(--color-shadow);
+  border-radius: 10px;
+}
+
+.filter-sort-grid p {
+  width: 100px;
+}
+
+.grid svg {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-off-white);
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
