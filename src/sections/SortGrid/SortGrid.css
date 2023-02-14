@@ -12,6 +12,7 @@
 .grid svg {
   width: 35px;
   height: 35px;
+  color: var(--color-midnight);
   background-color: var(--color-off-white);
   padding: 6px;
   border-radius: 3px;

@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { TbArrowsShuffle, TbShoppingCart, TbEye } from 'react-icons/tb';
 import './ProductCard.css';
 
 
-const ProductCard = ({ brand, title, price, image, image02 }) => {
+const ProductCard = ({ brand, title, price, image, image02, grid}) => {
+
+  let location = useLocation();
+
   return (
-    <div className="col-3">
+    <div className={` ${location.pathname === '/store' ? `col-${grid}` : 'col-3'} `}>
       <Link to="#" className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link to="#">
