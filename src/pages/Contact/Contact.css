@@ -16,7 +16,7 @@
   text-align: left;
 }
 
-.form-control {
+.contact-inner-wrapper .form-control {
   background-color: var(--color-off-white);
   border-radius: 5px;
   border-color: transparent;

@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact';
 import OurStore from './pages/OurStore/OurStore';
 import Blogs from './pages/Blogs/Blogs';
 import './App.css';
+import CompareProducts from './pages/CompareProducts/CompareProducts';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="contact-us" element={<Contact />} />
             <Route path="store" element={<OurStore />} />
             <Route path="blogs" element={<Blogs />} />
+            <Route path="compare-products" element={<CompareProducts />} />
           </Route>
         </Routes>
       </BrowserRouter>
