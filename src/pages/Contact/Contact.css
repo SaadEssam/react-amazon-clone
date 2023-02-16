@@ -1,0 +1,34 @@
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  gap: 15px;
+}
+
+.contact-inner-wrapper div {
+  width: 48%;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: left;
+}
+
+.form-control {
+  background-color: var(--color-off-white);
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 10px;
+
+}
+
+
+.contact-details * {
+  color: var(--color-gray);
+}
+
+.contact-details svg {
+  font-size: 20px;
+}
