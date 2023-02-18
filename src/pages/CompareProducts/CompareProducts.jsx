@@ -18,7 +18,7 @@ const CompareProducts = () => {
               <div className="compare-product-card position-relative">
                 <RxCross2 className="position-absolute cross" />
                 <div className="product-card-img">
-                  <img src={images.product01} />
+                  <img src={images.product01} alt="compare" />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="product-title">
@@ -51,7 +51,7 @@ const CompareProducts = () => {
               <div className="compare-product-card position-relative">
                 <RxCross2 className="position-absolute cross" />
                 <div className="product-card-img">
-                  <img src={images.product03} />
+                  <img src={images.product03} alt="compare" />
                 </div>
                 <div className="compare-product-details">
                   <h5 className="product-title">

@@ -19,7 +19,7 @@ const Wishlist = () => {
               <div className="wishlist-product-card position-relative">
                 <RxCross2 className="position-absolute cross" />
                 <div className="product-card-img">
-                  <img src={images.product03} />
+                  <img src={images.product03} alt="wishlist" />
                 </div>
                 <div className="wishlist-product-details">
                   <h5 className="product-title">
@@ -33,7 +33,7 @@ const Wishlist = () => {
               <div className="wishlist-product-card position-relative">
                 <RxCross2 className="position-absolute cross" />
                 <div className="product-card-img">
-                  <img src={images.product04} />
+                  <img src={images.product04} alt="wishlist" />
                 </div>
                 <div className="wishlist-product-details">
                   <h5 className="product-title">
@@ -47,7 +47,7 @@ const Wishlist = () => {
               <div className="wishlist-product-card position-relative">
                 <RxCross2 className="position-absolute cross" />
                 <div className="product-card-img">
-                  <img src={images.product01} />
+                  <img src={images.product01} alt="wishlist" />
                 </div>
                 <div className="wishlist-product-details">
                   <h5 className="product-title">

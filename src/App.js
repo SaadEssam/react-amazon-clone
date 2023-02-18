@@ -9,6 +9,7 @@ import './App.css';
 import CompareProducts from './pages/CompareProducts/CompareProducts';
 import Wishlist from './pages/Wishlist/Wishlist';
 import Login from './pages/Login/Login';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="compare-products" element={<CompareProducts />} />
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="login" element={<Login />} />
+            <Route path="forgot-password" element={<ForgotPassword />} />
           </Route>
         </Routes>
       </BrowserRouter>

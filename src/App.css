@@ -66,3 +66,19 @@
   margin: 30px auto;
   border-radius: 10px;
 }
+
+.auth-card .form-control {
+  background-color: var(--color-off-white);
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.auth-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.auth-card a {
+  color: var(--color-black);
+}
