@@ -1,0 +1,26 @@
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.compare-product-card svg {
+  font-size: 28px;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.product-card-img img {
+  width: 100%;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid var(--color-shadow);
+}
