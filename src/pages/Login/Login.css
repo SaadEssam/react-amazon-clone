@@ -1,0 +1,15 @@
+.auth-card .form-control {
+  background-color: var(--color-off-white);
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.auth-card a {
+  color: var(--color-black);
+}
+
+.auth-card .signup {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}

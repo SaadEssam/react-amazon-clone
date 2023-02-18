@@ -56,3 +56,13 @@
   font-weight: 600px;
 
 }
+
+
+.auth-card {
+  padding: 20px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 4px var(--color-shadow);
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
