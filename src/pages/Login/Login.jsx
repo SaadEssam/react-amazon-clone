@@ -24,8 +24,8 @@ const Login = () => {
                 <div>
                   <Link to="/forgot-password">Forgot Password ?</Link>
                   <div className="d-flex justify-content-center align-items-center gap-15 mt-3">
-                    <button className="buy-btn border-0 text-white">Login</button>
-                    <Link to="/" className="buy-btn signup">Signup</Link>
+                    <button className="buy-btn border-0 text-white" type="submit">Login</button>
+                    <Link to="/signup" className="buy-btn signup">Signup</Link>
                   </div>
                 </div>
               </form>
