@@ -41,7 +41,7 @@ const CompareProducts = () => {
                     </div>
                     <div className="product-detail">
                       <h6>Availability :</h6>
-                      <h7>In Stock</h7>
+                      <h7 className="text-success">In Stock</h7>
                     </div>
                   </div>
                 </div>
@@ -57,7 +57,7 @@ const CompareProducts = () => {
                   <h5 className="product-title">
                     Samsung DW80R2031US 55 dBA Stainless Built-in Dishwasher
                   </h5>
-                  <p className="price mb-3 mt-3">$600</p>
+                  <p className="price mb-3 mt-3">$758</p>
 
                   <div>
                     <div className="product-detail">
@@ -74,7 +74,7 @@ const CompareProducts = () => {
                     </div>
                     <div className="product-detail">
                       <h6>Availability :</h6>
-                      <h7>In Stock</h7>
+                      <h7 className="text-danger">Out of Stock</h7>
                     </div>
                   </div>
                 </div>
