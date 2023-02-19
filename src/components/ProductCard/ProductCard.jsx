@@ -11,8 +11,8 @@ const ProductCard = ({ brand, title, price, image, image02, grid}) => {
   let location = useLocation();
 
   return (
-    <div className={` ${location.pathname === '/store' ? `col-${grid}` : 'col-3'} `}>
-      <Link to="#" className="product-card position-relative">
+    <div className={` ${location.pathname === '/product' ? `col-${grid}` : 'col-3'} `}>
+      <Link to=":id" className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link to="#">
             <MdFavoriteBorder />
