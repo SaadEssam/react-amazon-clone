@@ -33,7 +33,7 @@
   height: 100%;
 }
 
-.app_blog-container_article-content p {
+.app_blog-container_article-content a {
   font-weight: 400;
   font-size: 13.649px;
   line-height: 35px;

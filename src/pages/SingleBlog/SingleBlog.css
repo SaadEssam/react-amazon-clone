@@ -1,0 +1,18 @@
+.single-blog-article a {
+  font-size: 15px;
+  color: var(--color-midnight);
+  margin-bottom: 20px;
+  
+}
+
+.single-blog-article h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+.single-blog-article p {
+  font-size: 18px;
+  color: var(--color-dark-blue);
+}
