@@ -27,12 +27,6 @@
   color: var(--color-dark-blue);
 }
 
-.review-head p, 
-.review-head a {
-  font-size: 14px;
-  color: var(--color-dark-blue);
-}
-
 .review-form {
   border-bottom: 1px solid var(--color-shadow);
 }
@@ -46,7 +40,77 @@
   border-bottom: 1px solid var(--color-shadow);
 }
 
-.reviews p {
+.review-btn {
   font-size: 14px;
   color: var(--color-dark-blue);
+}
+
+.product-image-wrapper {
+  border-radius: 10px;
+  background-color: var(--color-white);
+
+}
+
+.main-product-image,
+.second-product-image {
+  padding: 20px;
+}
+
+.main-product-image div {
+  border: 1px solid var(--color-shadow);
+}
+
+.second-product-image div {
+  padding: 20px;
+  width: 30%;
+  border: 1px solid var(--color-shadow);
+}
+
+.second-product-image img {
+  width: 100%;
+}
+
+.main-product-details {
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+
+.main-product-details .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+  margin-bottom: 10px;
+}
+
+.product-heading {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: var(--color-midnight);
+}
+
+.product-data {
+  font-size: 13px;
+  margin-bottom: 0px;
+  color: var(--color-gray);
+
+}
+
+.main-product-details .quantity {
+  width: 70px;
+}
+
+.main-product-details .buy-it {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+}
+
+.main-product-details svg {
+  font-size: 17px;
+}
+
+
+.accordion-button {
+  font-size: 14px !important;
 }
