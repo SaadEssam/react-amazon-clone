@@ -1,4 +1,5 @@
 import amazon from '../assets/amazon.png';
+import amazon02 from '../assets/amazon02.png';
 import mainBanner1 from '../assets/mainBanner1.jpg';
 import subBanner1 from '../assets/subBanner1.jpg';
 import subBanner2 from '../assets/subBanner2.jpg';
@@ -44,6 +45,7 @@ import famous04 from '../assets/famous04.png';
 
 export default { 
   amazon,
+  amazon02,
   mainBanner1, 
   subBanner1, 
   subBanner2, 
