@@ -12,7 +12,10 @@ const ProductCard = ({ brand, title, price, image, image02, grid}) => {
 
   return (
     <div className={` ${location.pathname === '/product' ? `col-${grid}` : 'col-3'} `}>
-      <Link to=":id" className="product-card position-relative">
+      <Link 
+        to={`${location.pathname === "/" ? "product/:id" : ":id"}`} 
+        className="product-card position-relative"
+      >
         <div className="wishlist-icon position-absolute">
           <button className="border-0 bg-transparent">
             <MdFavoriteBorder />
