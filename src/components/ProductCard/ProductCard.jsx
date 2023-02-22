@@ -14,9 +14,9 @@ const ProductCard = ({ brand, title, price, image, image02, grid}) => {
     <div className={` ${location.pathname === '/product' ? `col-${grid}` : 'col-3'} `}>
       <Link to=":id" className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
-          <Link to="#">
+          <button className="border-0 bg-transparent">
             <MdFavoriteBorder />
-          </Link>
+          </button>
         </div>
         <div className="product-image">
           <img src={image} alt="products" />
@@ -36,15 +36,15 @@ const ProductCard = ({ brand, title, price, image, image02, grid}) => {
         </div>
         <div className="action-bar position-absolute">
           <div className="d-flex flex-column gap-15">
-            <Link to="#">
+            <button className="border-0 bg-transparent">
               <TbArrowsShuffle />
-            </Link>
-            <Link to="#">
+            </button>
+            <button className="border-0 bg-transparent">
               <TbEye />
-            </Link>
-            <Link to="#">
+            </button>
+            <button className="border-0 bg-transparent">
               <TbShoppingCart />
-            </Link>
+            </button>
           </div>
         </div>
       </Link>
