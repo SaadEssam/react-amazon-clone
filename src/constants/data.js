@@ -174,5 +174,48 @@ const services = [
   },
 ]
 
+const Categories = [
+  {
+    title: 'Cameras',
+    quantity: '10 Items',
+    img: images.camera,
+  },
+  {
+    title: 'Computers & Laptop',
+    quantity: '8 Items',
+    img: images.laptops,
+  },
+  {
+    title: 'Mobiles & Tablets',
+    quantity: '14 Items',
+    img: images.tablets,
+  },
+  {
+    title: "smartwatch's",
+    quantity: '5 Items',
+    img: images.smartwatchs,
+  },
+  {
+    title: 'Headphones',
+    quantity: '4 Items',
+    img: images.music,
+  },
+  {
+    title: 'Smart TV',
+    quantity: '8 Items',
+    img: images.tv,
+  },
+  {
+    title: 'Home Appliances',
+    quantity: '9 Items',
+    img: images.home,
+  },
+  {
+    title: 'Gaming Console',
+    quantity: '5 Items',
+    img: images.ps5,
+  },
+]
 
-export default { products, SpecialProduct, bannerCard, blogs, services };
+
+export default { products, SpecialProduct, bannerCard, blogs, services, Categories };

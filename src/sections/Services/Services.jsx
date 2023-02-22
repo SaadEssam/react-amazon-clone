@@ -11,7 +11,7 @@ const Services = () => {
           <div className="services d-flex align-items-center justify-content-between">
             {data.services.map((service, index) => {
               return (
-                <div className="d-flex align-items-center gap-15">
+                <div className="d-flex align-items-center gap-15" key={index} >
                   <div className="icon">
                     {service.icon}
                   </div>
