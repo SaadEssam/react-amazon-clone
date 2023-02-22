@@ -1,4 +1,11 @@
 import images from './images';
+import { HiOutlineReceiptPercent } from 'react-icons/hi2';
+import { 
+  MdOutlineLocalShipping, 
+  MdOutlineCardGiftcard, 
+  MdOutlineHeadsetMic,
+  MdCreditCard,
+} from 'react-icons/md';
 
 const products = [
   {
@@ -139,5 +146,33 @@ const blogs = [
   },
 ];
 
+const services = [
+  {
+    title: 'Free Shipping',
+    subtitle: 'From all orders over $100',
+    icon: <MdOutlineLocalShipping />,
+  },
+  {
+    title: 'Daily Surprise Offers',
+    subtitle: 'Save up to 25% off',
+    icon: <MdOutlineCardGiftcard />,
+  },
+  {
+    title: 'Support 24/7',
+    subtitle: 'Shop with an expert',
+    icon: <MdOutlineHeadsetMic />,
+  },
+  {
+    title: 'Affordable Prices',
+    subtitle: 'Get Factory direct price',
+    icon: <HiOutlineReceiptPercent />,
+  },
+  {
+    title: 'Secure Payments',
+    subtitle: '100% Protected Payments',
+    icon: <MdCreditCard />,
+  },
+]
 
-export default { products, SpecialProduct, bannerCard, blogs };
+
+export default { products, SpecialProduct, bannerCard, blogs, services };
