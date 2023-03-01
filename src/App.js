@@ -17,6 +17,7 @@ import ResetPassword from './pages/ResetPassword/ResetPassword';
 import SingleProduct from './pages/SingleProduct/SingleProduct';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="forgot-password" element={<ForgotPassword />} />
             <Route path="signup" element={<Signup />} />
             <Route path="reset-password" element={<ResetPassword />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
