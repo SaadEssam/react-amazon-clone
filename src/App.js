@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -19,7 +20,26 @@ import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 
+import { useAuth } from './context/GlobalState';
+import { auth } from './firebase';
+
 function App() {
+  const { dispatch } = useAuth()
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) =>{
+      if(authUser) {
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+  },[]);
   return (
     <>
       <BrowserRouter>

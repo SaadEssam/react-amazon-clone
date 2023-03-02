@@ -1,0 +1,8 @@
+.login-btn a {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+
+.login-btn a:hover {
+  color: var(--color-rust);
+}

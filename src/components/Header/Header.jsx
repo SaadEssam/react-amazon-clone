@@ -1,14 +1,24 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import './Header.css';
+
 import { images } from '../../constants';
+
 import { BsSearch, BsCart3 } from 'react-icons/bs';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { TbArrowsShuffle } from 'react-icons/tb';
 import { FaRegUser } from 'react-icons/fa';
 import { CgMenuGridO } from 'react-icons/cg';
-import './Header.css';
+
+
+import { useAuth } from '../../context/GlobalState';
+import { auth } from '../../firebase';
 
 const Header = () => {
+  const { user } = useAuth();
+  const handleAuthentication = () => {
+    auth.signOut();
+  };
   return (
     <>
       <header className="header-top py-3">
@@ -51,25 +61,41 @@ const Header = () => {
             <div className="col-5">
               <div className="header-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link to="/compare-products" className="d-flex align-items-center gap-10 text-white">
+                  <Link 
+                    to="/compare-products" 
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <TbArrowsShuffle />
                     <p className="mb-0">Compare <br /> Products</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
+                  <Link 
+                    to="/wishlist" 
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <MdFavoriteBorder />
                     <p className="mb-0">Favorite <br /> wishlist</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/login" className="d-flex align-items-center gap-10 text-white">
+                  <Link 
+                    to={!user && "/login"}
+                    className="d-flex align-items-center gap-10 text-white" 
+                    onClick={handleAuthentication}
+                  >
                     <FaRegUser />
-                    <p className="mb-0">Log in <br /> My Account</p>
+                    <p className="mb-0">
+                      Hello {user ? `${user.email}` : "Guest"} 
+                      <br /> 
+                      {user ? "Log Out" : "Log in"}</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/cart" className="d-flex align-items-center gap-10 text-white">
+                  <Link 
+                    to="/cart" 
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <BsCart3 color="#febd69" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
@@ -91,8 +117,13 @@ const Header = () => {
                 <div>
                   <div className="dropdown">
                     <button
-                      className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
-                      type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                      className="btn btn-secondary dropdown-toggle bg-transparent 
+                        border-0 gap-15 d-flex align-items-center"
+                      type="button" 
+                      id="dropdownMenuButton" 
+                      data-bs-toggle="dropdown" 
+                      aria-haspopup="true" 
+                      aria-expanded="false"
                     ><CgMenuGridO fontSize={20} />
                     <span className="me-5 d-inline-block">Shop Categories</span>
                     </button>
