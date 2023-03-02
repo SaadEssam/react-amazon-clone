@@ -17,6 +17,8 @@ const Login = () => {
       if (auth) {
         navigate("/");
       }
+    }).catch((error) => {
+      alert(error.message);
     });
   };
   return (
