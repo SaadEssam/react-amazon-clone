@@ -14,31 +14,12 @@ import { useAuth } from "../../context/GlobalState";
 import { auth } from "../../firebase";
 
 const Header = () => {
-  const { user } = useAuth();
+  const { user, basket } = useAuth();
   const handleAuthentication = () => {
     auth.signOut();
   };
   return (
     <>
-      <header className="header-top py-3">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-6">
-              <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
-              </p>
-            </div>
-            <div className="col-6">
-              <p className="text-end text-white mb-0">
-                Hotline:{" "}
-                <a className="text-white" href="tel: +91 54869875">
-                  +91 54869875
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
       <header className="header-main py-3">
         <div className="container-xxl">
           <div className="row align-items-center">
@@ -111,8 +92,10 @@ const Header = () => {
                   >
                     <BsCart3 color="#febd69" />
                     <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 200</p>
+                      <span className="badge bg-white text-dark">
+                        {basket?.length}
+                      </span>
+                      {/* <p className="mb-0">$ 200</p> */}
                     </div>
                   </Link>
                 </div>

@@ -7,6 +7,22 @@ import "./ProductCard.css";
 import { useAuth } from "../../context/GlobalState";
 
 const ProductCard = ({ brand, title, price, image, image02, grid }) => {
+  const { dispatch, basket } = useAuth();
+  const addToCart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      product: {
+        brand,
+        title,
+        price,
+        image,
+        image02,
+        grid,
+      },
+    });
+  };
+  console.log(basket);
+
   let location = useLocation();
 
   return (
@@ -49,7 +65,7 @@ const ProductCard = ({ brand, title, price, image, image02, grid }) => {
               <TbEye />
             </button>
             <button className="border-0 bg-transparent">
-              <TbShoppingCart />
+              <TbShoppingCart onClick={addToCart} />
             </button>
           </div>
         </div>
