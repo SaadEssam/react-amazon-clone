@@ -5,7 +5,6 @@
   flex-direction: column;
   background: var(--color-white);
   box-shadow: 0 0 4px var(--color-shadow);
-
 }
 
 .app_blog-container_article-image {
@@ -44,7 +43,7 @@
   font-weight: 600;
   font-size: 17px;
   /* line-height: 30px; */
-  color : var(--color-grey);
+  color: var(--color-grey);
   /* margin-bottom: 5rem; */
   cursor: pointer;
   text-transform: capitalize;
@@ -53,7 +52,6 @@
 .app_blog-container_article-content p:last-child {
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 550px) {
   .app_blog-container_article-content h3 {

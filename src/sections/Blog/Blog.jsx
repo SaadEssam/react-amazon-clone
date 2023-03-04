@@ -1,8 +1,7 @@
-import React from 'react';
-import './Blog.css';
-import Article from '../../components/Article/Article';
-import { data } from '../../constants';
-
+import React from "react";
+import "./Blog.css";
+import Article from "../../components/Article/Article";
+import { data } from "../../constants";
 
 const Blog = () => {
   return (
@@ -15,10 +14,10 @@ const Blog = () => {
               <div className="app_blog-container">
                 <div className="app_blog-container_groupB">
                   {data.blogs.map((blog, index) => (
-                    <Article 
-                      key={blog.title + index} 
-                      title={blog.title} 
-                      image={blog.image} 
+                    <Article
+                      key={blog.title + index}
+                      title={blog.title}
+                      image={blog.image}
                       date={blog.date}
                     />
                   ))}
@@ -30,6 +29,6 @@ const Blog = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Blog;

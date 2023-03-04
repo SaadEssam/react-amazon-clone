@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import Meta from "../../components/Meta";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-import { RxCross2 } from 'react-icons/rx';
-import { images } from '../../constants';
-import './CompareProducts.css';
+import { RxCross2 } from "react-icons/rx";
+import { images } from "../../constants";
+import "./CompareProducts.css";
 
 const CompareProducts = () => {
   return (
@@ -85,6 +85,6 @@ const CompareProducts = () => {
       </div>
     </>
   );
-}
+};
 
 export default CompareProducts;

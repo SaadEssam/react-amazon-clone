@@ -2,7 +2,7 @@ import React from "react";
 import Meta from "../../components/Meta";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 import SideBar from "../../sections/SideBar/SideBar";
-import './OurStore.css';
+import "./OurStore.css";
 import SortGrid from "../../sections/SortGrid/SortGrid";
 
 const OurStore = () => {
@@ -20,6 +20,6 @@ const OurStore = () => {
       </div>
     </>
   );
-}
+};
 
 export default OurStore;

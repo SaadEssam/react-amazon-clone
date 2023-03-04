@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import Meta from "../../components/Meta";
-import { MdErrorOutline } from 'react-icons/md';
-import './PageNotFound.css';
+import { MdErrorOutline } from "react-icons/md";
+import "./PageNotFound.css";
 
 const PageNotFound = () => {
   return (
@@ -17,17 +17,21 @@ const PageNotFound = () => {
                 <MdErrorOutline />
               </div>
               <h4 className="text-center mb-3">Page Not Found</h4>
-              <p className="text-center mb-3">The page you are looking for doesn't exist 
-                or an other error occurred.</p>
+              <p className="text-center mb-3">
+                The page you are looking for doesn't exist or an other error
+                occurred.
+              </p>
               <div className="d-flex justify-content-center align-items-center mt-3">
-                <Link to="/" className="buy-btn">Go back</Link>
+                <Link to="/" className="buy-btn">
+                  Go back
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default PageNotFound;

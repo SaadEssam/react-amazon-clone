@@ -1,19 +1,22 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import ReactStars from 'react-rating-stars-component';
-import { MdFavoriteBorder } from 'react-icons/md';
-import { TbArrowsShuffle, TbShoppingCart, TbEye } from 'react-icons/tb';
-import './ProductCard.css';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import ReactStars from "react-rating-stars-component";
+import { MdFavoriteBorder } from "react-icons/md";
+import { TbArrowsShuffle, TbShoppingCart, TbEye } from "react-icons/tb";
+import "./ProductCard.css";
+import { useAuth } from "../../context/GlobalState";
 
-
-const ProductCard = ({ brand, title, price, image, image02, grid}) => {
-
+const ProductCard = ({ brand, title, price, image, image02, grid }) => {
   let location = useLocation();
 
   return (
-    <div className={` ${location.pathname === '/product' ? `col-${grid}` : 'col-3'} `}>
-      <Link 
-        to={`${location.pathname === "/" ? "product/:id" : ":id"}`} 
+    <div
+      className={` ${
+        location.pathname === "/product" ? `col-${grid}` : "col-3"
+      } `}
+    >
+      <Link
+        to={`${location.pathname === "/" ? "product/:id" : ":id"}`}
         className="product-card position-relative"
       >
         <div className="wishlist-icon position-absolute">
@@ -53,6 +56,6 @@ const ProductCard = ({ brand, title, price, image, image02, grid}) => {
       </Link>
     </div>
   );
-}
+};
 
 export default ProductCard;

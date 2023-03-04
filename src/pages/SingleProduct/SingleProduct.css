@@ -48,7 +48,6 @@
 .product-image-wrapper {
   border-radius: 10px;
   background-color: var(--color-white);
-
 }
 
 .main-product-image,
@@ -93,7 +92,6 @@
   font-size: 13px;
   margin-bottom: 0px;
   color: var(--color-gray);
-
 }
 
 .main-product-details .quantity {
@@ -109,7 +107,6 @@
 .main-product-details svg {
   font-size: 17px;
 }
-
 
 .accordion-button {
   font-size: 14px !important;

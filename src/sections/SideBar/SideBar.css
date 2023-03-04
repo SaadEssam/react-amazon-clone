@@ -24,12 +24,11 @@
 }
 
 .form-check-input {
-  margin-top: 0.40em !important;
+  margin-top: 0.4em !important;
 }
 
 .form-check-input:focus {
   box-shadow: none;
-
 }
 
 .form-check-input:checked {

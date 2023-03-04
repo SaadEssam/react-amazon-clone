@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Article.css';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Article.css";
 
 const Article = ({ image, date, title }) => {
   return (
@@ -14,10 +13,10 @@ const Article = ({ image, date, title }) => {
           <p>{date}</p>
           <h3>{title}</h3>
         </div>
-        <Link to="/blog/:id" >Read More →</Link>
+        <Link to="/blog/:id">Read More →</Link>
       </div>
     </div>
   );
-}
+};
 
 export default Article;

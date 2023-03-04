@@ -1,5 +1,5 @@
 import React from "react";
-import './BreadCrumb.css';
+import "./BreadCrumb.css";
 import { Link } from "react-router-dom";
 
 const BreadCrumb = ({ title }) => {
@@ -19,6 +19,6 @@ const BreadCrumb = ({ title }) => {
       </div>
     </div>
   );
-}
+};
 
 export default BreadCrumb;

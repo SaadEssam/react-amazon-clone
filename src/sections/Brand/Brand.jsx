@@ -1,7 +1,7 @@
-import React from 'react';
-import Marquee from 'react-fast-marquee';
-import { images } from '../../constants';
-import './Brand.css';
+import React from "react";
+import Marquee from "react-fast-marquee";
+import { images } from "../../constants";
+import "./Brand.css";
 
 const Brand = () => {
   return (
@@ -42,6 +42,6 @@ const Brand = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Brand;

@@ -1,33 +1,33 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 
-import Layout from './components/Layout/Layout';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
-import OurStore from './pages/OurStore/OurStore';
-import Blogs from './pages/Blogs/Blogs';
-import SingleBlog from './pages/SingleBlog/SingleBlog';
-import CompareProducts from './pages/CompareProducts/CompareProducts';
-import Wishlist from './pages/Wishlist/Wishlist';
-import Login from './pages/Login/Login';
-import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
-import Signup from './pages/Signup/Signup';
-import ResetPassword from './pages/ResetPassword/ResetPassword';
-import SingleProduct from './pages/SingleProduct/SingleProduct';
-import Cart from './pages/Cart/Cart';
-import Checkout from './pages/Checkout/Checkout';
-import PageNotFound from './pages/PageNotFound/PageNotFound';
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import OurStore from "./pages/OurStore/OurStore";
+import Blogs from "./pages/Blogs/Blogs";
+import SingleBlog from "./pages/SingleBlog/SingleBlog";
+import CompareProducts from "./pages/CompareProducts/CompareProducts";
+import Wishlist from "./pages/Wishlist/Wishlist";
+import Login from "./pages/Login/Login";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import Signup from "./pages/Signup/Signup";
+import ResetPassword from "./pages/ResetPassword/ResetPassword";
+import SingleProduct from "./pages/SingleProduct/SingleProduct";
+import Cart from "./pages/Cart/Cart";
+import Checkout from "./pages/Checkout/Checkout";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
-import { useAuth } from './context/GlobalState';
-import { auth } from './firebase';
+import { useAuth } from "./context/GlobalState";
+import { auth } from "./firebase";
 
 function App() {
-  const { dispatch } = useAuth()
+  const { dispatch } = useAuth();
   useEffect(() => {
-    auth.onAuthStateChanged((authUser) =>{
-      if(authUser) {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
         dispatch({
           type: "SET_USER",
           user: authUser,
@@ -39,7 +39,7 @@ function App() {
         });
       }
     });
-  },[]);
+  }, []);
   return (
     <>
       <BrowserRouter>

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import Meta from "../../components/Meta";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
 
-import { RxCross2 } from 'react-icons/rx';
-import { images } from '../../constants';
+import { RxCross2 } from "react-icons/rx";
+import { images } from "../../constants";
 
-import './Wishlist.css';
+import "./Wishlist.css";
 
 const Wishlist = () => {
   return (
@@ -37,7 +37,8 @@ const Wishlist = () => {
                 </div>
                 <div className="wishlist-product-details">
                   <h5 className="product-title">
-                    Beats Studio Buds – True Wireless Noise Cancelling Bluetooth Earbuds
+                    Beats Studio Buds – True Wireless Noise Cancelling Bluetooth
+                    Earbuds
                   </h5>
                   <p className="price mb-3 mt-3">$99.95</p>
                 </div>
@@ -62,6 +63,6 @@ const Wishlist = () => {
       </div>
     </>
   );
-}
+};
 
 export default Wishlist;

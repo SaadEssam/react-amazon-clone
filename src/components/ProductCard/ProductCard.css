@@ -7,14 +7,12 @@
   overflow: hidden;
 }
 
-
 .product-card .product-image img:last-child {
   display: none;
 }
 
 .product-card:hover .product-image img:nth-child(1) {
   display: none;
-
 }
 
 .product-card:hover .product-image img:last-child {
@@ -26,13 +24,13 @@
 }
 
 .product-image img {
-  width: 100%
+  width: 100%;
 }
 
 .action-bar {
   top: 10%;
   right: -23px;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .wishlist-icon {
@@ -45,11 +43,10 @@
   font-size: 20px;
 }
 
-
 .product-card svg:hover {
   padding: 3px 3px;
   background-color: var(--color-orange);
-  transition: .5s ease;
+  transition: 0.5s ease;
   width: 20px;
   border-radius: 50%;
 }

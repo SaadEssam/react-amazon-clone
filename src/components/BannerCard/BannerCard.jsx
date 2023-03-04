@@ -1,7 +1,7 @@
 import React from "react";
-import './BannerCard.css';
+import "./BannerCard.css";
 
-const BannerCard = ({ label, subtitle, title, image}) => {
+const BannerCard = ({ label, subtitle, title, image }) => {
   return (
     <div className="col-3">
       <div className="card-img position-relative">
@@ -14,6 +14,6 @@ const BannerCard = ({ label, subtitle, title, image}) => {
       </div>
     </div>
   );
-}
+};
 
 export default BannerCard;

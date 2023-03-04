@@ -1,7 +1,7 @@
-import React from 'react';
-import SpecialProduct from '../../components/SpecialProduct/SpecialProduct';
-import { data } from '../../constants';
-import './SpecialProducts.css';
+import React from "react";
+import SpecialProduct from "../../components/SpecialProduct/SpecialProduct";
+import { data } from "../../constants";
+import "./SpecialProducts.css";
 
 const SpecialProducts = () => {
   return (
@@ -15,20 +15,20 @@ const SpecialProducts = () => {
         <div className="row">
           {data.SpecialProduct.map((product, index) => (
             <SpecialProduct
-              key={product.title + index} 
-              brand={product.brand} 
-              title={product.title} 
-              price={product.price} 
-              discountPrice={product.discountPrice} 
-              image={product.image} 
-              discountDays={product.discountDays} 
-              productCount={product.productCount} 
+              key={product.title + index}
+              brand={product.brand}
+              title={product.title}
+              price={product.price}
+              discountPrice={product.discountPrice}
+              image={product.image}
+              discountDays={product.discountDays}
+              productCount={product.productCount}
             />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default SpecialProducts;

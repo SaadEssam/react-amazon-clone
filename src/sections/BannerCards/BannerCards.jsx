@@ -1,7 +1,7 @@
 import React from "react";
 import BannerCard from "../../components/BannerCard/BannerCard";
 import { data } from "../../constants";
-import './BannerCards.css';
+import "./BannerCards.css";
 
 const BannerCards = () => {
   return (
@@ -10,17 +10,17 @@ const BannerCards = () => {
         <div className="row">
           {data.bannerCard.map((card, index) => (
             <BannerCard
-              key={card.title + index} 
-              label={card.label} 
-              subtitle={card.subtitle} 
-              title={card.title} 
-              image={card.image} 
+              key={card.title + index}
+              label={card.label}
+              subtitle={card.subtitle}
+              title={card.title}
+              image={card.image}
             />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default BannerCards;
