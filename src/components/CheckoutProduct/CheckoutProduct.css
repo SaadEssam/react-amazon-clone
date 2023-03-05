@@ -1,0 +1,6 @@
+.cart-data svg {
+  font-size: 26px;
+  color: var(--color-red);
+  cursor: pointer;
+  margin-bottom: 2px;
+}

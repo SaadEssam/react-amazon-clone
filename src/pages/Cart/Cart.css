@@ -24,8 +24,6 @@
   width: 15%;
 }
 
-.cart-data svg {
-  font-size: 22px;
-  color: var(--color-red);
-  cursor: pointer;
+.subtotal-price {
+  text-decoration: underline;
 }

@@ -21,7 +21,6 @@ const ProductCard = ({ brand, title, price, image, image02, grid }) => {
       },
     });
   };
-  console.log(basket);
 
   let location = useLocation();
 
@@ -64,9 +63,9 @@ const ProductCard = ({ brand, title, price, image, image02, grid }) => {
             <button className="border-0 bg-transparent">
               <TbEye />
             </button>
-            <button className="border-0 bg-transparent">
+            <Link to="/cart" className="border-0 bg-transparent">
               <TbShoppingCart onClick={addToCart} />
-            </button>
+            </Link>
           </div>
         </div>
       </Link>
