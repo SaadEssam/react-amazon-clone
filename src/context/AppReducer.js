@@ -20,8 +20,28 @@ const AppReducer = (state = initialState, action) => {
         ...state,
         basket: [...state.basket, action.product],
       };
+    case "EMPTY_CART":
+      return {
+      ...state,
+        basket: [],
+      };
     case "REMOVE_FROM_CART":
-      return
+      const index = state.basket.findIndex(
+        (basketItem) => basketItem.id === action.id
+      );
+      let newBasket = [...state.basket];
+
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      } else {
+        console.warn(
+          `Can't remove product {id ${action.id} as it's not in basket!`
+        );
+      }
+      return {
+        ...state,
+        basket: newBasket,
+      };
     default:
       return state;
   }

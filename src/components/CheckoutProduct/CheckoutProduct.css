@@ -1,4 +1,4 @@
-.cart-data svg {
+.cart-data .delete-icon {
   font-size: 26px;
   color: var(--color-red);
   cursor: pointer;

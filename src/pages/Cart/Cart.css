@@ -27,3 +27,13 @@
 .subtotal-price {
   text-decoration: underline;
 }
+
+.backToHome {
+  text-decoration: underline;
+  font-size: 17px;
+  color: var(--color-gray);
+}
+
+.backToHome:hover {
+  color: var(--color-rust);
+}

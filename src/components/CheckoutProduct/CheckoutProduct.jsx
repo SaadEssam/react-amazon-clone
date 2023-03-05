@@ -4,8 +4,16 @@ import { AiFillDelete } from "react-icons/ai";
 import { images } from "../../constants";
 import ImageZoom from "react-image-zooom";
 import "./CheckoutProduct.css";
+import { useAuth } from "../../context/GlobalState";
 
 const CheckoutProduct = ({ id, title, price, image }) => {
+  const { dispatch } = useAuth();
+  const RemoveFromCart = () => {
+    dispatch({
+      type: "REMOVE_FROM_CART",
+      id: id,
+    });
+  };
   return (
     <div className="cart-data mb-2 py-3 d-flex justify-content-between align-items-center">
       <div className="cart-col-1 gap-15 d-flex align-items-center">
@@ -44,7 +52,7 @@ const CheckoutProduct = ({ id, title, price, image }) => {
           />
         </div>
         <div>
-          <AiFillDelete />
+          <AiFillDelete onClick={RemoveFromCart} className="delete-icon" />
         </div>
       </div>
       <div className="cart-col-4">

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Meta from "../../components/Meta";
 import BreadCrumb from "../../components/BreadCrumb/BreadCrumb";
-import CurrencyFormat from 'react-currency-format';
+import CurrencyFormat from "react-currency-format";
 
 import "./Cart.css";
 import { useAuth } from "../../context/GlobalState";
@@ -25,15 +25,24 @@ const Cart = () => {
                 <h4 className="cart-col-3">Quantity</h4>
                 <h4 className="cart-col-4">Total</h4>
               </div>
-              {basket.map((product) => (
-                <CheckoutProduct
-                  key={product.id}
-                  id={product.id}
-                  title={product.title}
-                  price={product.price}
-                  image={product.image}
-                />
-              ))}
+              {basket.length > 0 ? (
+                basket.map((product) => (
+                  <CheckoutProduct
+                    key={product.id}
+                    id={product.id}
+                    title={product.title}
+                    price={product.price}
+                    image={product.image}
+                  />
+                ))
+              ) : (
+                <div className="d-wrap">
+                  <h4 className="mt-3">Your Amazon Cart is empty.</h4>
+                  <Link to="/" className="backToHome">
+                    Back to Home
+                  </Link>
+                </div>
+              )}
             </div>
             <div className="col-12 py-2 mt-3">
               <div className="d-flex justify-content-between align-items-center">
@@ -45,9 +54,7 @@ const Cart = () => {
                     SubTotal:{" "}
                     <span className="subtotal-price">
                       <CurrencyFormat
-                        renderText={(value) => (
-                          <span>{value}</span>
-                        )}
+                        renderText={(value) => <span>{value}</span>}
                         decimalScale={2}
                         value={getBasketTotal(basket)}
                         displayType={"text"}
