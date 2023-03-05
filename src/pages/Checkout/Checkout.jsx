@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Meta from "../../components/Meta";
 import { images } from "../../constants";
+import { useAuth } from "../../context/GlobalState";
+import CurrencyFormat from "react-currency-format";
+import { getBasketTotal } from "../../context/AppReducer";
 import "./Checkout.css";
 
 const Checkout = () => {
+  const { user, basket } = useAuth();
   return (
     <>
       <Meta title="Checkout" />
@@ -43,7 +47,7 @@ const Checkout = () => {
                   </ol>
                 </nav>
                 <h4 className="title">Contact Information</h4>
-                <p className="user-details">Michel (Michel01@gmail.com)</p>
+                <p className="user-details">Hello {user?.email}</p>
                 <form
                   action=""
                   className="d-flex gap-15 flex-wrap justify-content-between"
@@ -109,9 +113,6 @@ const Checkout = () => {
                       <Link to="/cart" className="text-dark">
                         ← Return to Cart
                       </Link>
-                      <Link to="/cart" className="buy-btn">
-                        Continue to Shopping
-                      </Link>
                     </div>
                   </div>
                 </form>
@@ -121,7 +122,16 @@ const Checkout = () => {
               <div className="border-bottom py-4">
                 <div className="d-flex justify-content-between align-items-center">
                   <p>Subtotal</p>
-                  <p>$1300</p>
+                  <p>
+                    <CurrencyFormat
+                      renderText={(value) => <span>{value}</span>}
+                      decimalScale={2}
+                      value={getBasketTotal(basket)}
+                      displayType={"text"}
+                      thousandSeparator={true}
+                      prefix={"$"}
+                    />
+                  </p>
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="mb-0">Shipping</p>
@@ -130,7 +140,19 @@ const Checkout = () => {
               </div>
               <div className="d-flex justify-content-between align-items-center border-bottom py-4">
                 <p>Total</p>
-                <p>$1310</p>
+                <p>
+                  <CurrencyFormat
+                    renderText={(value) => <span>{value + 10}</span>}
+                    decimalScale={2}
+                    value={getBasketTotal(basket)}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"$"}
+                  />
+                </p>
+              </div>
+              <div>
+                <button className="checkout-buy">Buy Now!</button>
               </div>
             </div>
           </div>
