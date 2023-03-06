@@ -1,0 +1,2964 @@
+[debug] [2023-03-06T15:50:45.811Z] ----------------------------------------------------------------------
+[debug] [2023-03-06T15:50:45.813Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\almadina\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-03-06T15:50:45.814Z] CLI Version:   11.22.0
+[debug] [2023-03-06T15:50:45.814Z] Platform:      win32
+[debug] [2023-03-06T15:50:45.814Z] Node Version:  v16.18.0
+[debug] [2023-03-06T15:50:45.815Z] Time:          Mon Mar 06 2023 17:50:45 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-03-06T15:50:45.815Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-06T15:50:45.913Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-06T15:50:45.913Z] > authorizing via signed-in user (saadessam059@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-03-06T15:50:45.930Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-06T15:50:45.930Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-03-06T15:50:45.939Z] [hub] writing locator at C:\Users\almadina\AppData\Local\Temp\hub-clone-94d39.json
+[debug] [2023-03-06T15:50:45.967Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-06T15:50:45.968Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-06T15:50:45.968Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-03-06T15:50:45.982Z] defaultcredentials: writing to file C:\Users\almadina\AppData\Roaming\firebase\saadessam059_gmail_com_application_default_credentials.json
+[debug] [2023-03-06T15:50:45.988Z] Setting GAC to C:\Users\almadina\AppData\Roaming\firebase\saadessam059_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\almadina\\AppData\\Roaming\\firebase\\saadessam059_gmail_com_application_default_credentials.json"}}
+[debug] [2023-03-06T15:50:45.991Z] > refreshing access token with scopes: []
+[debug] [2023-03-06T15:50:45.994Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-06T15:50:45.995Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-06T15:50:46.218Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-06T15:50:46.219Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-06T15:50:46.238Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-94d39/adminSdkConfig [none]
+[debug] [2023-03-06T15:50:46.656Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-94d39/adminSdkConfig 200
+[debug] [2023-03-06T15:50:46.657Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-94d39/adminSdkConfig {"projectId":"clone-94d39","storageBucket":"clone-94d39.appspot.com"}
+[info] i  ui: downloading ui-v1.11.2.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.2.zip..."}}
+[debug] [2023-03-06T15:50:46.694Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 
+[debug] [2023-03-06T15:50:46.874Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip 200
+[debug] [2023-03-06T15:50:46.874Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.2.zip [stream]
+[debug] [2023-03-06T15:50:50.986Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-03-06T15:50:50.987Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-03-06T15:50:50.987Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\almadina\\.cache\\firebase\\emulators\\ui-v1.11.2\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\almadina\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.2\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-03-06T15:50:51.241Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-03-06T15:50:51.241Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "D:\Projects\React\react-amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Projects\\React\\react-amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2023-03-06T15:50:51.303Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T15:50:53.002Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T15:50:53.002Z] Building nodejs source
+[debug] [2023-03-06T15:50:53.003Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T15:50:53.006Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T15:50:53.015Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T15:50:54.243Z] Serving at port 8803
+
+[debug] [2023-03-06T15:50:55.213Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T15:50:55.222Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-94d39/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-94d39/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-03-06T15:51:19.927Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T15:51:20.937Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T15:51:23.200Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T15:51:23.200Z] Building nodejs source
+[debug] [2023-03-06T15:51:23.201Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T15:51:23.205Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T15:51:23.220Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T15:51:23.472Z] Serving at port 8566
+
+[debug] [2023-03-06T15:51:23.631Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T15:51:23.638Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T15:51:23.831Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T15:51:24.841Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T15:51:27.421Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T15:51:27.421Z] Building nodejs source
+[debug] [2023-03-06T15:51:27.421Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T15:51:27.427Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T15:51:27.450Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T15:51:27.977Z] Serving at port 8886
+
+[debug] [2023-03-06T15:51:28.207Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T15:51:28.215Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T15:51:28.985Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T15:51:29.995Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T15:51:31.690Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T15:51:31.690Z] Building nodejs source
+[debug] [2023-03-06T15:51:31.690Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T15:51:31.693Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T15:51:31.708Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T15:51:32.013Z] Serving at port 8102
+
+[debug] [2023-03-06T15:51:32.185Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T15:51:32.189Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:22.070Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:23.077Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:25.166Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:25.167Z] Building nodejs source
+[debug] [2023-03-06T16:00:25.167Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:25.172Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:25.196Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:25.216Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:25.446Z] Serving at port 8016
+
+[debug] [2023-03-06T16:00:25.651Z] Got response from /__/functions.yaml Failed to generate manifest from function source: TypeError: Cannot set properties of undefined (setting 'api')
+[debug] [2023-03-06T16:00:25.655Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:
+     ...  from function source: TypeError: Cannot set properties of undef ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: TypeError: Cannot set properties of undefined (setting 'api')\n\u0000","position":59,"line":0,"column":59},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:\n     ...  from function source: TypeError: Cannot set properties of undef ... \n                                         ^"}
+[debug] [2023-03-06T16:00:25.664Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: Cannot set properties of undefined (setting 'api') {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: Cannot set properties of undefined (setting 'api')"}}
+[debug] [2023-03-06T16:00:26.223Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:27.747Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:27.747Z] Building nodejs source
+[debug] [2023-03-06T16:00:27.747Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:27.748Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:27.758Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:27.768Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:28.061Z] Serving at port 8215
+
+[debug] [2023-03-06T16:00:28.202Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:00:28.206Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:28.784Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:30.561Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:30.561Z] Building nodejs source
+[debug] [2023-03-06T16:00:30.562Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:30.563Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:30.575Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:30.966Z] Serving at port 8887
+
+[debug] [2023-03-06T16:00:31.125Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:00:31.131Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:31.312Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:32.322Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:34.002Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:34.002Z] Building nodejs source
+[debug] [2023-03-06T16:00:34.003Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:34.005Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:34.025Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:34.056Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:34.397Z] Serving at port 8601
+
+[debug] [2023-03-06T16:00:34.605Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:00:34.618Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:35.058Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:36.689Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:36.690Z] Building nodejs source
+[debug] [2023-03-06T16:00:36.690Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:36.691Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:36.699Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:36.975Z] Serving at port 8195
+
+[debug] [2023-03-06T16:00:37.130Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:00:37.135Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:46.755Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:47.760Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:49.400Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:49.401Z] Building nodejs source
+[debug] [2023-03-06T16:00:49.401Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:49.404Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:49.424Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:00:49.674Z] Serving at port 8687
+
+[debug] [2023-03-06T16:00:49.818Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:00:49.824Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:00:53.221Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:53.426Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:54.437Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:00:56.414Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:00:56.415Z] Building nodejs source
+[debug] [2023-03-06T16:00:56.415Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:00:56.417Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:00:56.441Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:8660/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8660 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:8660/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8660"}}
+[debug] [2023-03-06T16:00:56.931Z] Serving at port 8660
+
+[debug] [2023-03-06T16:00:58.063Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:00:59.075Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:00.533Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:00.534Z] Building nodejs source
+[debug] [2023-03-06T16:01:00.534Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:00.535Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:00.549Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:00.561Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:8993/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8993 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:8993/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8993"}}
+[debug] [2023-03-06T16:01:00.829Z] Serving at port 8993
+
+[debug] [2023-03-06T16:01:01.564Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:03.160Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:03.161Z] Building nodejs source
+[debug] [2023-03-06T16:01:03.161Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:03.163Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:03.172Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:03.454Z] Serving at port 8028
+
+[debug] [2023-03-06T16:01:03.471Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-03-06T16:01:03.471Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-03-06T16:01:03.474Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-03-06T16:01:08.874Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:09.891Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:11.506Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:11.506Z] Building nodejs source
+[debug] [2023-03-06T16:01:11.507Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:11.508Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:11.517Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:11.777Z] Serving at port 8375
+
+[debug] [2023-03-06T16:01:11.792Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-03-06T16:01:11.793Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-03-06T16:01:11.797Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-03-06T16:01:13.281Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:14.352Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:14.353Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:15.814Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:15.815Z] Building nodejs source
+[debug] [2023-03-06T16:01:15.815Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:15.825Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:15.826Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:15.844Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:15.855Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:17.252Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:17.252Z] Building nodejs source
+[debug] [2023-03-06T16:01:17.252Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:17.256Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:17.269Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:17.279Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:18.682Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:18.682Z] Building nodejs source
+[debug] [2023-03-06T16:01:18.682Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:18.683Z] Serving at port 8015
+
+[debug] [2023-03-06T16:01:18.684Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:18.696Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:18.707Z] Serving at port 8991
+
+[debug] [2023-03-06T16:01:18.905Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:18.914Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:18.940Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:18.947Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:19.018Z] Serving at port 8719
+
+[debug] [2023-03-06T16:01:19.155Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:19.161Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:23.883Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:24.891Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:27.894Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:27.894Z] Building nodejs source
+[debug] [2023-03-06T16:01:27.894Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:27.897Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:27.911Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:27.926Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:28.157Z] Serving at port 8558
+
+[debug] [2023-03-06T16:01:28.174Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:01:28.175Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:01:28.178Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:01:28.939Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:30.445Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:30.445Z] Building nodejs source
+[debug] [2023-03-06T16:01:30.445Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:30.446Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:30.456Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:30.835Z] Serving at port 8260
+
+[debug] [2023-03-06T16:01:30.855Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:01:30.856Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:01:30.861Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:01:34.061Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:35.075Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:37.851Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:37.851Z] Building nodejs source
+[debug] [2023-03-06T16:01:37.852Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:37.854Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:37.864Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:37.873Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:38.104Z] Serving at port 8445
+
+[debug] [2023-03-06T16:01:38.253Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:38.261Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:38.879Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:40.464Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:40.464Z] Building nodejs source
+[debug] [2023-03-06T16:01:40.464Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:40.466Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:40.475Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:40.484Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:40.793Z] Serving at port 8735
+
+[debug] [2023-03-06T16:01:41.001Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:41.007Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:41.488Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:43.301Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:43.301Z] Building nodejs source
+[debug] [2023-03-06T16:01:43.302Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:43.307Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:43.322Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:43.873Z] Serving at port 8359
+
+[debug] [2023-03-06T16:01:44.164Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:01:44.180Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:01:46.905Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:47.914Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:49.624Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:49.624Z] Building nodejs source
+[debug] [2023-03-06T16:01:49.624Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:49.626Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:49.637Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:49.647Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:49.878Z] Serving at port 8604
+
+[debug] [2023-03-06T16:01:49.895Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:01:49.895Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:01:49.899Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:01:50.654Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:52.143Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:52.143Z] Building nodejs source
+[debug] [2023-03-06T16:01:52.143Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:52.146Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:52.162Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:52.403Z] Serving at port 8332
+
+[debug] [2023-03-06T16:01:52.416Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:01:52.417Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:01:52.420Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:01:54.860Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:55.866Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:01:58.148Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:01:58.148Z] Building nodejs source
+[debug] [2023-03-06T16:01:58.149Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:01:58.154Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:01:58.176Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:01:58.195Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:58.446Z] Serving at port 8318
+
+[debug] [2023-03-06T16:01:58.472Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:01:58.473Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:01:58.477Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:01:58.662Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:01:59.675Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:01.336Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:01.336Z] Building nodejs source
+[debug] [2023-03-06T16:02:01.336Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:01.339Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:01.351Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:01.755Z] Serving at port 8294
+
+[debug] [2023-03-06T16:02:01.778Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration
+[debug] [2023-03-06T16:02:01.779Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Missing initializer in const d ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Missing initializer in const d ... \n                                         ^"}
+[debug] [2023-03-06T16:02:01.786Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Missing initializer in const declaration"}}
+[debug] [2023-03-06T16:02:02.817Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:03.832Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:05.766Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:05.766Z] Building nodejs source
+[debug] [2023-03-06T16:02:05.766Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:05.768Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:05.780Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:05.793Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:06.118Z] Serving at port 8594
+
+[debug] [2023-03-06T16:02:06.133Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[debug] [2023-03-06T16:02:06.133Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token '}'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token '}'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token '}'\n                                         ^"}
+[debug] [2023-03-06T16:02:06.137Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}'"}}
+[debug] [2023-03-06T16:02:06.797Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:08.415Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:08.415Z] Building nodejs source
+[debug] [2023-03-06T16:02:08.415Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:08.418Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:08.426Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:08.439Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:08.825Z] Serving at port 8318
+
+[debug] [2023-03-06T16:02:08.855Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[debug] [2023-03-06T16:02:08.856Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token '}'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token '}'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token '}'\n                                         ^"}
+[debug] [2023-03-06T16:02:08.861Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}'"}}
+[debug] [2023-03-06T16:02:09.439Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:11.510Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:11.510Z] Building nodejs source
+[debug] [2023-03-06T16:02:11.510Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:11.514Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:11.514Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:11.532Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:11.784Z] Serving at port 8463
+
+[debug] [2023-03-06T16:02:11.948Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:11.948Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:11.955Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:12.949Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:14.846Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:14.846Z] Building nodejs source
+[debug] [2023-03-06T16:02:14.846Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:14.851Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:14.868Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:14.886Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:15.157Z] Serving at port 8699
+
+[debug] [2023-03-06T16:02:15.285Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:15.290Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:15.890Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:17.483Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:17.483Z] Building nodejs source
+[debug] [2023-03-06T16:02:17.483Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:17.485Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:17.493Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:17.504Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:17.774Z] Serving at port 8220
+
+[debug] [2023-03-06T16:02:17.913Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:17.918Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:18.508Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:20.201Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:20.201Z] Building nodejs source
+[debug] [2023-03-06T16:02:20.201Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:20.205Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:20.220Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:20.484Z] Serving at port 8048
+
+[debug] [2023-03-06T16:02:20.616Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:20.620Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:26.028Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:27.040Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:29.007Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:29.007Z] Building nodejs source
+[debug] [2023-03-06T16:02:29.007Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:29.010Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:29.023Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:29.329Z] Serving at port 8154
+
+[debug] [2023-03-06T16:02:29.506Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:29.513Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:30.362Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:31.377Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:33.156Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:33.156Z] Building nodejs source
+[debug] [2023-03-06T16:02:33.156Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:33.158Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:33.172Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:33.553Z] Serving at port 8599
+
+[debug] [2023-03-06T16:02:33.746Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:33.754Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:34.754Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:35.768Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:37.235Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:37.235Z] Building nodejs source
+[debug] [2023-03-06T16:02:37.236Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:37.241Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:37.263Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:37.531Z] Serving at port 8116
+
+[debug] [2023-03-06T16:02:37.681Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:37.687Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:40.751Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:41.758Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:43.602Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:43.602Z] Building nodejs source
+[debug] [2023-03-06T16:02:43.602Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:43.604Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:43.614Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:43.623Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:43.857Z] Serving at port 8448
+
+[debug] [2023-03-06T16:02:43.989Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:43.994Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:44.629Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:46.133Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:46.133Z] Building nodejs source
+[debug] [2023-03-06T16:02:46.133Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:46.138Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:46.158Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:46.174Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:46.509Z] Serving at port 8967
+
+[debug] [2023-03-06T16:02:46.657Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:46.663Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:47.177Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:49.008Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:49.036Z] Building nodejs source
+[debug] [2023-03-06T16:02:49.036Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:49.039Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:49.049Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:49.058Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:49.289Z] Serving at port 8963
+
+[debug] [2023-03-06T16:02:49.410Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:49.414Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:50.070Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:51.526Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:51.526Z] Building nodejs source
+[debug] [2023-03-06T16:02:51.526Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:51.529Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:51.539Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:51.897Z] Serving at port 8963
+
+[debug] [2023-03-06T16:02:52.028Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:52.034Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:02:56.543Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:57.548Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:02:59.239Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:02:59.239Z] Building nodejs source
+[debug] [2023-03-06T16:02:59.239Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:02:59.240Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:02:59.256Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:02:59.266Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:02:59.485Z] Serving at port 8814
+
+[debug] [2023-03-06T16:02:59.611Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:02:59.615Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:00.269Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:01.619Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:01.620Z] Building nodejs source
+[debug] [2023-03-06T16:03:01.620Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:01.621Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:01.628Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:01.861Z] Serving at port 8012
+
+[debug] [2023-03-06T16:03:02.002Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:02.007Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:03.413Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:04.420Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:05.978Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:05.978Z] Building nodejs source
+[debug] [2023-03-06T16:03:05.978Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:05.983Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:06.004Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:06.264Z] Serving at port 8425
+
+[debug] [2023-03-06T16:03:06.413Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:06.418Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:07.868Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:08.875Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:10.430Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:10.431Z] Building nodejs source
+[debug] [2023-03-06T16:03:10.431Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:10.434Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:10.463Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:10.481Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:10.708Z] Serving at port 8433
+
+[debug] [2023-03-06T16:03:10.833Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:10.837Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:11.496Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:12.878Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:12.878Z] Building nodejs source
+[debug] [2023-03-06T16:03:12.878Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:12.880Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:12.892Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:13.131Z] Serving at port 8319
+
+[debug] [2023-03-06T16:03:13.264Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:13.269Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:18.991Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:19.998Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:21.438Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:21.438Z] Building nodejs source
+[debug] [2023-03-06T16:03:21.439Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:21.440Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:21.446Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:21.683Z] Serving at port 8457
+
+[debug] [2023-03-06T16:03:21.824Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:21.831Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:24.955Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:25.966Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:27.552Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:27.553Z] Building nodejs source
+[debug] [2023-03-06T16:03:27.553Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:27.556Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:27.569Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:27.800Z] Serving at port 8930
+
+[debug] [2023-03-06T16:03:27.949Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:03:27.954Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:03:30.678Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:31.689Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:33.413Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:33.518Z] Building nodejs source
+[debug] [2023-03-06T16:03:33.518Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:33.520Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:33.529Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:33.538Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:8867/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8867 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:8867/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8867"}}
+[debug] [2023-03-06T16:03:33.771Z] Serving at port 8867
+
+[debug] [2023-03-06T16:03:34.549Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:36.140Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:36.141Z] Building nodejs source
+[debug] [2023-03-06T16:03:36.141Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:36.145Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:36.166Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:36.427Z] Serving at port 8739
+
+[debug] [2023-03-06T16:03:36.455Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-03-06T16:03:36.456Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-03-06T16:03:36.459Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-03-06T16:03:40.685Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:41.691Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:43.115Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:43.115Z] Building nodejs source
+[debug] [2023-03-06T16:03:43.115Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:43.118Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:43.128Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:43.352Z] Serving at port 8198
+
+[debug] [2023-03-06T16:03:43.366Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected end of input
+[debug] [2023-03-06T16:03:43.367Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected end of input
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected end of input\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected end of input\n                                         ^"}
+[debug] [2023-03-06T16:03:43.370Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input"}}
+[debug] [2023-03-06T16:03:44.780Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:45.796Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:47.455Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:47.455Z] Building nodejs source
+[debug] [2023-03-06T16:03:47.455Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:47.457Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:47.479Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:47.705Z] Serving at port 8183
+
+[debug] [2023-03-06T16:03:47.725Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected end of input
+[debug] [2023-03-06T16:03:47.725Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected end of input
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected end of input\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected end of input\n                                         ^"}
+[debug] [2023-03-06T16:03:47.728Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected end of input"}}
+[debug] [2023-03-06T16:03:57.293Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:03:58.297Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:03:59.892Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:03:59.893Z] Building nodejs source
+[debug] [2023-03-06T16:03:59.893Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:03:59.895Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:03:59.914Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:03:59.932Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:00.158Z] Serving at port 8119
+
+[debug] [2023-03-06T16:04:00.175Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-03-06T16:04:00.176Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-03-06T16:04:00.186Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-03-06T16:04:00.936Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:02.403Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:02.404Z] Building nodejs source
+[debug] [2023-03-06T16:04:02.404Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:02.405Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:02.413Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:02.637Z] Serving at port 8087
+
+[debug] [2023-03-06T16:04:02.649Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token ')'
+[debug] [2023-03-06T16:04:02.650Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token ')'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token ')'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token ')'\n                                         ^"}
+[debug] [2023-03-06T16:04:02.653Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token ')'"}}
+[debug] [2023-03-06T16:04:24.204Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:25.207Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:26.785Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:26.786Z] Building nodejs source
+[debug] [2023-03-06T16:04:26.786Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:26.788Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:26.799Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:26.810Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:27.033Z] Serving at port 8034
+
+[debug] [2023-03-06T16:04:27.162Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:27.171Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:27.810Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:29.308Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:29.308Z] Building nodejs source
+[debug] [2023-03-06T16:04:29.308Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:29.314Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:29.334Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:29.358Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:29.901Z] Serving at port 8482
+
+[debug] [2023-03-06T16:04:30.146Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:30.152Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:30.373Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:32.173Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:32.173Z] Building nodejs source
+[debug] [2023-03-06T16:04:32.173Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:32.174Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:32.191Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:32.782Z] Serving at port 8822
+
+[debug] [2023-03-06T16:04:33.019Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:33.025Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:34.526Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:35.543Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:37.195Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:37.195Z] Building nodejs source
+[debug] [2023-03-06T16:04:37.195Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:37.204Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:37.221Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:37.466Z] Serving at port 8917
+
+[debug] [2023-03-06T16:04:37.642Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:37.648Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:37.847Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:38.855Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:40.865Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:40.865Z] Building nodejs source
+[debug] [2023-03-06T16:04:40.866Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:40.868Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:40.886Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:40.907Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:41.142Z] Serving at port 8030
+
+[debug] [2023-03-06T16:04:41.290Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:41.296Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:41.907Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:43.830Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:43.830Z] Building nodejs source
+[debug] [2023-03-06T16:04:43.830Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:43.832Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:43.841Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:43.852Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:44.153Z] Serving at port 8885
+
+[debug] [2023-03-06T16:04:44.322Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:44.335Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:44.859Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:46.403Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:46.403Z] Building nodejs source
+[debug] [2023-03-06T16:04:46.403Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:46.404Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:46.415Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:46.424Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:46.658Z] Serving at port 8189
+
+[debug] [2023-03-06T16:04:46.668Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:46.796Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:46.801Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:47.676Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:49.318Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:49.319Z] Building nodejs source
+[debug] [2023-03-06T16:04:49.319Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:49.322Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:49.344Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:49.362Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:49.622Z] Serving at port 8376
+
+[debug] [2023-03-06T16:04:49.784Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:49.790Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:50.372Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:51.953Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:51.953Z] Building nodejs source
+[debug] [2023-03-06T16:04:51.953Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:51.956Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:51.967Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:51.986Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:52.240Z] Serving at port 8314
+
+[debug] [2023-03-06T16:04:52.254Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[debug] [2023-03-06T16:04:52.255Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token '}'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token '}'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token '}'\n                                         ^"}
+[debug] [2023-03-06T16:04:52.258Z] shutdown requested via /__/quitquitquit
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}'"}}
+[debug] [2023-03-06T16:04:52.998Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:54.559Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:54.559Z] Building nodejs source
+[debug] [2023-03-06T16:04:54.560Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:54.561Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:54.568Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:54.577Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:04:54.802Z] Serving at port 8152
+
+[debug] [2023-03-06T16:04:54.936Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:54.942Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:55.586Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:04:57.010Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:04:57.010Z] Building nodejs source
+[debug] [2023-03-06T16:04:57.010Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:04:57.014Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:04:57.034Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:04:57.266Z] Serving at port 8122
+
+[debug] [2023-03-06T16:04:57.387Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:04:57.391Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:04:59.665Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:05:00.675Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:05:02.440Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:05:02.440Z] Building nodejs source
+[debug] [2023-03-06T16:05:02.440Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:05:02.443Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:05:02.454Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:05:02.482Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-03-06T16:05:02.686Z] Serving at port 8573
+
+[debug] [2023-03-06T16:05:02.840Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:05:02.848Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:05:03.497Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-03-06T16:05:04.968Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-03-06T16:05:04.968Z] Building nodejs source
+[debug] [2023-03-06T16:05:04.968Z] Failed to find version of module node: reached end of search path D:\Projects\React\react-amazon-clone\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[debug] [2023-03-06T16:05:04.970Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-06T16:05:04.983Z] Found firebase-functions binary at 'D:\Projects\React\react-amazon-clone\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-06T16:05:05.244Z] Serving at port 8851
+
+[debug] [2023-03-06T16:05:05.410Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-06T16:05:05.416Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-03-06T16:05:06.165Z] File D:\Projects\React\react-amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Projects\\React\\react-amazon-clone\\functions\\index.js changed, reloading triggers"}}
