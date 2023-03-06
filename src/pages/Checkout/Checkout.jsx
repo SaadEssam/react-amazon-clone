@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Meta from "../../components/Meta";
 import { images } from "../../constants";
@@ -6,9 +6,17 @@ import { useAuth } from "../../context/GlobalState";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../context/AppReducer";
 import "./Checkout.css";
+import { CardElement } from "@stripe/react-stripe-js";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
 
 const Checkout = () => {
+  const [phone, setPhone] = useState("");
   const { user, basket } = useAuth();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  const handleChange = () => {};
   return (
     <>
       <Meta title="Checkout" />
@@ -46,9 +54,17 @@ const Checkout = () => {
                     </li>
                   </ol>
                 </nav>
+                <div className="w-100 mb-3">
+                  <div className="d-flex justify-content-between align-items-center">
+                    <Link to="/cart" className="text-dark">
+                      ← Return to Cart
+                    </Link>
+                  </div>
+                </div>
                 <h4 className="title">Contact Information</h4>
                 <p className="user-details">Hello {user?.email}</p>
                 <form
+                  onSubmit={handleSubmit}
                   action=""
                   className="d-flex gap-15 flex-wrap justify-content-between"
                 >
@@ -80,7 +96,15 @@ const Checkout = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="w-100">
+                  <div className="flex-grow-1">
+                    <PhoneInput
+                      country={"eg"}
+                      enableSearch={true}
+                      value={phone}
+                      onChange={(phone) => setPhone(phone)}
+                    />
+                  </div>
+                  <div className="flex-grow-1">
                     <input
                       type="text"
                       placeholder="Apartment, Suite, etc"
@@ -108,12 +132,11 @@ const Checkout = () => {
                       className="form-control"
                     />
                   </div>
+                  {/* <CardElement onChange={handleChange} /> */}
                   <div className="w-100">
-                    <div className="d-flex justify-content-between align-items-center">
-                      <Link to="/cart" className="text-dark">
-                        ← Return to Cart
-                      </Link>
-                    </div>
+                    <button className="checkout-buy" type="submit">
+                      Buy Now!
+                    </button>
                   </div>
                 </form>
               </div>
@@ -150,9 +173,6 @@ const Checkout = () => {
                     prefix={"$"}
                   />
                 </p>
-              </div>
-              <div>
-                <button className="checkout-buy">Buy Now!</button>
               </div>
             </div>
           </div>
