@@ -38,36 +38,40 @@ const Cart = () => {
               ) : (
                 <div className="d-wrap">
                   <h4 className="mt-3">Your Amazon Cart is empty.</h4>
-                  <Link to="/" className="backToHome">
+                  {/* <Link to="/" className="backToHome">
                     Back to Home
-                  </Link>
+                  </Link> */}
                 </div>
               )}
             </div>
             <div className="col-12 py-2 mt-3">
               <div className="d-flex justify-content-between align-items-center">
-                <Link to="/product" className="buy-btn">
-                  Continue to Shopping
+                <Link to="/" className="buy-btn">
+                  {basket.length > 0 ? "Continue to Shopping" : "Back to Home"}
                 </Link>
-                <div className="d-flex flex-column align-items-end">
-                  <h4>
-                    SubTotal:{" "}
-                    <span className="subtotal-price">
-                      <CurrencyFormat
-                        renderText={(value) => <span>{value}</span>}
-                        decimalScale={2}
-                        value={getBasketTotal(basket)}
-                        displayType={"text"}
-                        thousandSeparator={true}
-                        prefix={"$"}
-                      />
-                    </span>
-                  </h4>
-                  <p>*Taxes and Shipping calculated at checkout</p>
-                  <Link to="/checkout" className="buy-btn">
-                    Checkout Now
-                  </Link>
-                </div>
+                {basket.length > 0 ? (
+                  <div className="d-flex flex-column align-items-end">
+                    <h4>
+                      SubTotal:{" "}
+                      <span className="subtotal-price">
+                        <CurrencyFormat
+                          renderText={(value) => <span>{value}</span>}
+                          decimalScale={2}
+                          value={getBasketTotal(basket)}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"$"}
+                        />
+                      </span>
+                    </h4>
+                    <p>*Taxes and Shipping calculated at checkout</p>
+                    <Link to="/checkout" className="buy-btn">
+                      Checkout Now
+                    </Link>
+                  </div>
+                ) : (
+                  <div></div>
+                )}
               </div>
             </div>
           </div>

@@ -1,22 +1,62 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { React, useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import Meta from "../../components/Meta";
 import { images } from "../../constants";
 import { useAuth } from "../../context/GlobalState";
-import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../context/AppReducer";
-import "./Checkout.css";
-import { CardElement } from "@stripe/react-stripe-js";
+import CurrencyFormat from "react-currency-format";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
+import axios from "../../components/axios";
+import "./Checkout.css";
 
 const Checkout = () => {
   const [phone, setPhone] = useState("");
-  const { user, basket } = useAuth();
-  const handleSubmit = (e) => {
+  const { user, basket, dispatch } = useAuth();
+  const [clientSecret, setClientSecret] = useState();
+  const [error, setError] = useState(null);
+  const [disabled, setDisabled] = useState(true);
+  const [succeeded, setSucceeded] = useState(false);
+  const [processing, setProcessing] = useState("");
+  const stripe = useStripe();
+  const elements = useElements();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const getClientSecret = async () => {
+      const response = await axios({
+        method: "post",
+        url: `/checkout/create?total=${getBasketTotal(basket) * 100}`,
+      });
+      setClientSecret(response.data.clientSecret);
+      return response;
+    };
+    getClientSecret();
+  }, [basket]);
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setProcessing(true);
+    const payload = await stripe
+      .confirmCardPayment(clientSecret, {
+        payment_method: {
+          card: elements.getElement(CardElement),
+        },
+      })
+      .then(({ paymentIntent }) => {
+        setSucceeded(true);
+        setError(null);
+        setProcessing(false);
+        navigate("/orders", { replace: true });
+        dispatch({
+          type: "EMPTY_CART",
+        });
+      });
   };
-  const handleChange = () => {};
+  const handleChange = (e) => {
+    setDisabled(e.empty);
+    setError(error ? error.message : "");
+  };
   return (
     <>
       <Meta title="Checkout" />
@@ -68,13 +108,13 @@ const Checkout = () => {
                   action=""
                   className="d-flex gap-15 flex-wrap justify-content-between"
                 >
-                  <div className="w-100">
+                  {/* <div className="w-100">
                     <select name="" className="form-control form-select" id="">
                       <option value="" selected disabled>
                         Select Country
                       </option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="flex-grow-1">
                     <input
                       type="text"
@@ -89,13 +129,13 @@ const Checkout = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="w-100">
+                  {/* <div className="w-100">
                     <input
                       type="text"
                       placeholder="Address"
                       className="form-control"
                     />
-                  </div>
+                  </div> */}
                   <div className="flex-grow-1">
                     <PhoneInput
                       country={"eg"}
@@ -104,14 +144,14 @@ const Checkout = () => {
                       onChange={(phone) => setPhone(phone)}
                     />
                   </div>
-                  <div className="flex-grow-1">
+                  {/* <div className="flex-grow-1">
                     <input
                       type="text"
                       placeholder="Apartment, Suite, etc"
                       className="form-control"
                     />
-                  </div>
-                  <div className="flex-grow-1">
+                  </div> */}
+                  {/* <div className="flex-grow-1">
                     <input
                       type="text"
                       placeholder="City"
@@ -124,7 +164,7 @@ const Checkout = () => {
                         Select State
                       </option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="flex-grow-1">
                     <input
                       type="text"
@@ -132,12 +172,19 @@ const Checkout = () => {
                       className="form-control"
                     />
                   </div>
-                  {/* <CardElement onChange={handleChange} /> */}
+                  <div className="w-100 card-stripe">
+                    <CardElement onChange={handleChange} />
+                  </div>
                   <div className="w-100">
-                    <button className="checkout-buy" type="submit">
-                      Buy Now!
+                    <button
+                      className="checkout-buy"
+                      type="submit"
+                      disabled={processing || disabled || succeeded}
+                    >
+                      {processing ? "processing" : "Buy Now"}
                     </button>
                   </div>
+                  {error && <div>{error}</div>}
                 </form>
               </div>
             </div>

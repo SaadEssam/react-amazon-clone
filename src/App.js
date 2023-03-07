@@ -22,9 +22,15 @@ import PageNotFound from "./pages/PageNotFound/PageNotFound";
 
 import { useAuth } from "./context/GlobalState";
 import { auth } from "./firebase";
+import Orders from "./pages/Orders/Orders";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 
 function App() {
   const { dispatch } = useAuth();
+  const stripePromise = loadStripe(
+    "pk_test_51LpvHqJsaKztgHd5j9lnHRRlRrcMAW33Hlaost9eZD1ckuXGiiz5ptmN4FPR10fo8I5nCNf7rUHHN6N140qRbor300eT2kbrGS"
+  );
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -51,11 +57,19 @@ function App() {
             <Route path="product" element={<OurStore />} />
             <Route path="product/:id" element={<SingleProduct />} />
             <Route path="cart" element={<Cart />} />
-            <Route path="checkout" element={<Checkout />} />
+            <Route
+              path="checkout"
+              element={
+                <Elements stripe={stripePromise}>
+                  <Checkout />
+                </Elements>
+              }
+            />
             <Route path="blogs" element={<Blogs />} />
             <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="compare-products" element={<CompareProducts />} />
             <Route path="wishlist" element={<Wishlist />} />
+            <Route path="orders" element={<Orders />} />
             <Route path="login" element={<Login />} />
             <Route path="forgot-password" element={<ForgotPassword />} />
             <Route path="signup" element={<Signup />} />
