@@ -9,7 +9,9 @@ import CurrencyFormat from "react-currency-format";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import axios from "../../components/axios";
+import { doc, setDoc } from "firebase/firestore";
 import "./Checkout.css";
+import { db } from "../../firebase";
 
 const Checkout = () => {
   const [phone, setPhone] = useState("");
@@ -44,6 +46,12 @@ const Checkout = () => {
         },
       })
       .then(({ paymentIntent }) => {
+        const ref = doc(db, "users", user?.uid, "orders", paymentIntent.id);
+        setDoc(ref, {
+          basket: basket,
+          amount: paymentIntent.amount,
+          created: paymentIntent.created,
+        });
         setSucceeded(true);
         setError(null);
         setProcessing(false);
@@ -177,8 +185,8 @@ const Checkout = () => {
                   </div>
                   <div className="w-100">
                     <button
-                      className="checkout-buy"
                       type="submit"
+                      className="checkout-buy"
                       disabled={processing || disabled || succeeded}
                     >
                       {processing ? "processing" : "Buy Now"}
